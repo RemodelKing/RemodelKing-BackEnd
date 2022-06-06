@@ -11,6 +11,7 @@ public class AppDbContext: DbContext
     }
     public DbSet<Client> Clients { get; set; }
     public DbSet<Business> Businesses { get; set; }
+    public DbSet<BusinessProject> BusinessProjects { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -37,6 +38,16 @@ public class AppDbContext: DbContext
         builder.Entity<Client>().Property(p => p.ConfirmPassword).IsRequired().HasMaxLength(50);
         builder.Entity<Client>().Property(p => p.FirstName).IsRequired().HasMaxLength(50);
         builder.Entity<Client>().Property(p => p.LastName).IsRequired().HasMaxLength(50);
+        
+        builder.Entity<BusinessProject>().ToTable("BusinessProjects");
+        builder.Entity<BusinessProject>().HasKey(p => p.Id);
+        builder.Entity<BusinessProject>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
+        builder.Entity<BusinessProject>().Property(p => p.Style).IsRequired().HasMaxLength(50);
+        builder.Entity<BusinessProject>().Property(p => p.Description).IsRequired();
+        builder.Entity<BusinessProject>().Property(p => p.Location).IsRequired().HasMaxLength(100);
+        builder.Entity<BusinessProject>().Property(p => p.Img);
+        builder.Entity<BusinessProject>().Property(p => p.Score);
+        builder.Entity<BusinessProject>().Property(p => p.BusinessId).IsRequired();
 
         builder.UseSnakeCaseNamingConvention();
     }

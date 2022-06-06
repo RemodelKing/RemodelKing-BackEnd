@@ -33,7 +33,9 @@ builder.Services.AddRouting(
 builder.Services.AddScoped<IClientRepository, ClientRepository>();
 builder.Services.AddScoped<IClientService, ClientServiceImpl>();
 builder.Services.AddScoped<IBusinessService, BusinessServiceImpl>();
-builder.Services.AddScoped<IBusinessRepository, BusinessRepository>();
+builder.Services.AddScoped<IBusinessRepository, BusinessRepository>();;
+builder.Services.AddScoped<IBusinessProjectService, BusinessProjectServiceImpl>();
+builder.Services.AddScoped<IBusinessProjectRepository, BusinessProjectRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWorkRepository>();
 
 // AutoMapper Configuration
