@@ -9,20 +9,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="502bcef3-8177-4903-888e-0d0f82f19310" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/Register/Domain/Models/Activity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Register/Domain/Models/Portfolio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.backend/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.backend/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Register/Controllers/ActivitiesController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Register/Controllers/PortfoliosController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Register/Domain/Repositories/IActivityRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Register/Domain/Repositories/IPortfolioRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Register/Domain/Services/Communication/ActivityResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Register/Domain/Services/Communication/PortfolioResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Register/Domain/Services/IActivityService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Register/Domain/Services/IPortfolioService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Register/Persistence/Repositories/ActivityRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Register/Persistence/Repositories/PortfolioRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Register/Resources/ActivityResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Register/Resources/PortfolioResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Register/Resources/SaveActivityResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Register/Resources/SavePortfolioResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Register/Services/ActivityServiceImpl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Register/Services/PortfolioServiceImpl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.backend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/backend.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/backend.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/backend.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/backend.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Register/Domain/Models/Portfolio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Domain/Models/Portfolio.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Register/Persistence/Context/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Persistence/Context/AppDbContext.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +49,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.backend">
@@ -95,6 +104,9 @@
       <workItem from="1654522114014" duration="2406000" />
       <workItem from="1654524556369" duration="6329000" />
       <workItem from="1654572051478" duration="299000" />
+      <workItem from="1654572467141" duration="320000" />
+      <workItem from="1654635704515" duration="2166000" />
+      <workItem from="1654657074916" duration="613000" />
     </task>
     <servers />
   </component>
@@ -102,7 +114,7 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
