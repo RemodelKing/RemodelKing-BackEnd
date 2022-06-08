@@ -6,7 +6,7 @@ public class Business: User
     public long Phone { get; set; }
     
     //Relationship
-    public IList<Client> Client { get; set; } = new List<Client>();
+    //public IList<Client> Client { get; set; } = new List<Client>();
     public IList<BusinessProject> BusinessProjects { get; set; } = new List<BusinessProject>();
     
 }

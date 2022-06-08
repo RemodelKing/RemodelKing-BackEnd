@@ -40,6 +40,8 @@ builder.Services.AddScoped<IActivityRepository, ActivityRepository>();
 builder.Services.AddScoped<IActivityService, ActivityServiceImpl>();
 builder.Services.AddScoped<IPortfolioRepository, PortfolioRepository>();
 builder.Services.AddScoped<IPortfolioService, PortfolioServiceImpl>();
+builder.Services.AddScoped<IRequestService, RequestServiceImpl>();
+builder.Services.AddScoped<IRequestRepository, RequestRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWorkRepository>();
 
 // AutoMapper Configuration

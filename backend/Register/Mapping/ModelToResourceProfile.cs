@@ -13,5 +13,6 @@ public class ModelToResourceProfile: Profile
         CreateMap<BusinessProject, BusinessProjectResource>();
         CreateMap<Portfolio,SavePortfolioResource>();
         CreateMap<Activity,SaveActivityResource>();
+        CreateMap<Request, RequestResource>();
     }
 }

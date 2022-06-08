@@ -6,7 +6,7 @@ public class Client : User
     public string LastName { get; set; }
     
     //Relationship
-    public long BusinessId { get; set; }
-    public Business Business { get; set; }
+    //public long BusinessId { get; set; }
+    //public Business Business { get; set; }
     
 }

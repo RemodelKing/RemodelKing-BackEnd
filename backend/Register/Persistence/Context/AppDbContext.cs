@@ -16,6 +16,8 @@ public class AppDbContext: DbContext
     public DbSet<Activity> Activities { get; set; }
     
     public DbSet<Portfolio> Portfolios { get; set; }
+    
+    public DbSet<Request> Requests { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -29,10 +31,10 @@ public class AppDbContext: DbContext
         builder.Entity<Business>().Property(p => p.Name).IsRequired().HasMaxLength(50);
         builder.Entity<Business>().Property(p => p.Phone).IsRequired();
 
-        builder.Entity<Business>()
-            .HasMany(p => p.Client)
-            .WithOne(p => p.Business)
-            .HasForeignKey(p => p.BusinessId);  
+        //builder.Entity<Business>()
+           // .HasMany(p => p.Client)
+           // .WithOne(p => p.Business)
+           // .HasForeignKey(p => p.BusinessId);  
 
         builder.Entity<Client>().ToTable("Clients");
         builder.Entity<Client>().HasKey(p => p.Id);
@@ -72,6 +74,14 @@ public class AppDbContext: DbContext
         builder.Entity<BusinessProject>().Property(p => p.Img);
         builder.Entity<BusinessProject>().Property(p => p.Score);
         builder.Entity<BusinessProject>().Property(p => p.BusinessId).IsRequired();
+        
+        builder.Entity<Request>().ToTable("Requests");
+        builder.Entity<Request>().HasKey(p => p.Id);
+        builder.Entity<Request>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
+        builder.Entity<Request>().Property(p => p.BusinessName).IsRequired().HasMaxLength(50);
+        builder.Entity<Request>().Property(p => p.Email).IsRequired().HasMaxLength(50);
+        builder.Entity<Request>().Property(p => p.Title).IsRequired().HasMaxLength(50);
+        builder.Entity<Request>().Property(p => p.Description).IsRequired().HasMaxLength(50);
 
         builder.UseSnakeCaseNamingConvention();
     }

@@ -10,5 +10,5 @@ public class BusinessProject
     public int Score { get; set; }
     public int BusinessId { get; set; }
     
-    public Business Business { get; set; }
+    //public Business Business { get; set; }
 }
