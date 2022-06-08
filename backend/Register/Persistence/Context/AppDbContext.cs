@@ -43,7 +43,7 @@ public class AppDbContext: DbContext
         builder.Entity<Client>().Property(p => p.FirstName).IsRequired().HasMaxLength(50);
         builder.Entity<Client>().Property(p => p.LastName).IsRequired().HasMaxLength(50);
         
-        builder.Entity<Portfolio>().ToTable("Portfolio");
+        builder.Entity<Portfolio>().ToTable("Portfolios");
         builder.Entity<Portfolio>().HasKey(p => p.Id);
         builder.Entity<Portfolio>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
         builder.Entity<Portfolio>().Property(p => p.Email).IsRequired().HasMaxLength(50);
@@ -51,7 +51,7 @@ public class AppDbContext: DbContext
         builder.Entity<Portfolio>().Property(p => p.Phone).IsRequired();
 
         builder.Entity<Portfolio>()
-            .HasMany(p => p.Activities)
+            .HasMany(p => p.Activity)
             .WithOne(p => p.Portfolio)
             .HasForeignKey(p => p.PortfolioId);  
 

@@ -11,5 +11,5 @@ public class Portfolio
     
     public long Phone { get; set; }
     
-    public IList<Activity> Activities { get; set; } = new List<Activity>();
+    public IList<Activity> Activity { get; set; } = new List<Activity>();
 }

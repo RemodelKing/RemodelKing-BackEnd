@@ -11,5 +11,7 @@ public class ModelToResourceProfile: Profile
         CreateMap<Client, ClientResource>();
         CreateMap<Business, BusinessResource>();
         CreateMap<BusinessProject, BusinessProjectResource>();
+        CreateMap<Portfolio,SavePortfolioResource>();
+        CreateMap<Activity,SaveActivityResource>();
     }
 }

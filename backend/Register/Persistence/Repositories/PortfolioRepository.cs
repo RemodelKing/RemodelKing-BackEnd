@@ -17,7 +17,7 @@ public class PortfolioRepository: BaseRepository, IPortfolioRepository
             .ToListAsync();
     }
 
-    public async Task<Portfolio> FindByIdAsync(long id)
+    public async Task<Portfolio> FindByIdAsync(int id)
     {
         return await _context.Portfolios.FindAsync();
     }

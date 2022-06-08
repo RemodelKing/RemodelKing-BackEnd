@@ -36,14 +36,16 @@ builder.Services.AddScoped<IBusinessService, BusinessServiceImpl>();
 builder.Services.AddScoped<IBusinessRepository, BusinessRepository>();;
 builder.Services.AddScoped<IBusinessProjectService, BusinessProjectServiceImpl>();
 builder.Services.AddScoped<IBusinessProjectRepository, BusinessProjectRepository>();
+builder.Services.AddScoped<IActivityRepository, ActivityRepository>();
+builder.Services.AddScoped<IActivityService, ActivityServiceImpl>();
+builder.Services.AddScoped<IPortfolioRepository, PortfolioRepository>();
+builder.Services.AddScoped<IPortfolioService, PortfolioServiceImpl>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWorkRepository>();
 
 // AutoMapper Configuration
 builder.Services.AddAutoMapper(
     typeof(ModelToResourceProfile), 
     typeof(ResourceToModelProfile));
-
-
 
 var app = builder.Build();
 
