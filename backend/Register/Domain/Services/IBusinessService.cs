@@ -7,4 +7,5 @@ public interface IBusinessService
 {
     Task<IEnumerable<Business>> ListAsync();
     Task<BusinessResponse> CreateAsync(Business business);
+    Task<BusinessResponse> GetAccount(string email);
 }

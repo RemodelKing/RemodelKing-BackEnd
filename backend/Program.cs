@@ -4,10 +4,14 @@ using backend.Register.Persistence.Context;
 using backend.Register.Persistence.Repositories;
 using backend.Register.Services;
 using backend.Register.Mapping;
+using backend.RemodelKing.Domain.Repositories;
+using backend.RemodelKing.Domain.Services;
+using backend.RemodelKing.Persistence.Repositories;
+using backend.RemodelKing.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-
+var  MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -23,7 +27,15 @@ builder.Services.AddDbContext<AppDbContext>(
         .EnableSensitiveDataLogging()
         .EnableDetailedErrors());
 
-
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+        policy  =>
+        {
+            policy.WithOrigins("http://localhost:3000").AllowAnyHeader()
+                .AllowAnyMethod();
+        });
+});
 
 // Add lower case routes
 builder.Services.AddRouting(
@@ -42,6 +54,8 @@ builder.Services.AddScoped<IPortfolioRepository, PortfolioRepository>();
 builder.Services.AddScoped<IPortfolioService, PortfolioServiceImpl>();
 builder.Services.AddScoped<IRequestService, RequestServiceImpl>();
 builder.Services.AddScoped<IRequestRepository, RequestRepository>();
+builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
+builder.Services.AddScoped<IPaymentService, PaymentServiceImpl>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWorkRepository>();
 
 // AutoMapper Configuration
@@ -68,7 +82,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseStaticFiles();
+app.UseRouting();
+app.UseCors(MyAllowSpecificOrigins);
 app.UseAuthorization();
 
 app.MapControllers();

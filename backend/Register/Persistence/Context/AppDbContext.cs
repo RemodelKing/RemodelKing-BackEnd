@@ -1,4 +1,5 @@
 ﻿using backend.Register.Domain.Models;
+using backend.RemodelKing.Domain.Models;
 using backend.Shared.Extensions;
 using Microsoft.EntityFrameworkCore;
 
@@ -18,6 +19,7 @@ public class AppDbContext: DbContext
     public DbSet<Portfolio> Portfolios { get; set; }
     
     public DbSet<Request> Requests { get; set; }
+    public DbSet<Payment> Payments { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -82,7 +84,14 @@ public class AppDbContext: DbContext
         builder.Entity<Request>().Property(p => p.Email).IsRequired().HasMaxLength(50);
         builder.Entity<Request>().Property(p => p.Title).IsRequired().HasMaxLength(50);
         builder.Entity<Request>().Property(p => p.Description).IsRequired().HasMaxLength(50);
-
+        builder.Entity<Payment>().ToTable("Payments");
+        builder.Entity<Payment>().HasKey(p => p.Id);
+        builder.Entity<Payment>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
+        builder.Entity<Payment>().Property(p => p.CreditCard).IsRequired();
+        builder.Entity<Payment>().Property(p => p.CardHolder).IsRequired();
+        builder.Entity<Payment>().Property(p => p.CardIssuer).IsRequired();
+        builder.Entity<Payment>().Property(p => p.CVV).IsRequired();
+        builder.Entity<Payment>().Property(p => p.ExpiryDate).IsRequired();
         builder.UseSnakeCaseNamingConvention();
     }
 }

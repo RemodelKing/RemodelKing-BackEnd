@@ -26,5 +26,9 @@ public class BusinessRepository: BaseRepository, IBusinessRepository
     {
         await _context.Businesses.AddAsync(business);
     }
-
+    public async Task<Business> FindByEmailAsync(string email)
+    {
+        return await _context.Businesses
+            .FirstOrDefaultAsync(p => p.Email == email);
+    }
 }

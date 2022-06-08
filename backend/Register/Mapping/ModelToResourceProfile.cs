@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using backend.Register.Domain.Models;
 using backend.Register.Resources;
+using backend.RemodelKing.Domain.Models;
+using backend.RemodelKing.Resources;
 
 namespace backend.Register.Mapping;
 
@@ -14,5 +16,6 @@ public class ModelToResourceProfile: Profile
         CreateMap<Portfolio,SavePortfolioResource>();
         CreateMap<Activity,SaveActivityResource>();
         CreateMap<Request, RequestResource>();
+        CreateMap<Payment, PaymentResource>();
     }
 }

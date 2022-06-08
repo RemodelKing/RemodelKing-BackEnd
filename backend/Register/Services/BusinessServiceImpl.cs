@@ -39,4 +39,16 @@ public class BusinessServiceImpl: IBusinessService
             return new BusinessResponse($"Failed to register a business: {e.Message}");
         }
     }
+    public async Task<BusinessResponse> GetAccount(string email)
+    {
+        try
+        {
+            var currentUser = await _businessRepository.FindByEmailAsync(email);
+            return new BusinessResponse(currentUser);
+        }
+        catch (Exception e)
+        {
+            return new BusinessResponse($"Failed to find a current user business: {e.Message}");
+        }
+    }
 }

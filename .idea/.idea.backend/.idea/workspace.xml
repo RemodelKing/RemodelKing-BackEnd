@@ -9,44 +9,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="502bcef3-8177-4903-888e-0d0f82f19310" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/Register/Controllers/RequestController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Register/Domain/Models/Request.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Register/Domain/Repositories/IRequestRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Register/Domain/Services/Communication/RequestResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Register/Domain/Services/IRequestService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Register/Persistence/Repositories/RequestRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Register/Resources/RequestResource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Register/Resources/SaveRequestResource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Register/Services/RequestServiceImpl.cs" afterDir="false" />
+      <change afterPath="$APPLICATION_CONFIG_DIR$/resharper-host/UsageStatistics2.1/CURRENT" afterDir="false" />
+      <change afterPath="$APPLICATION_CONFIG_DIR$/resharper-host/UsageStatistics2.1/LOCK" afterDir="false" />
+      <change afterPath="$APPLICATION_CONFIG_DIR$/resharper-host/UsageStatistics2.1/LOG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Register/Controllers/PaymentsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Register/Domain/Models/Payment.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Register/Domain/Repositories/IPaymentRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Register/Domain/Services/Communication/PaymentResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Register/Domain/Services/IPaymentService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Register/Persistence/Repositories/PaymentRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Register/Resources/PaymentResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Register/Resources/SavePaymentResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Register/Services/PaymentServiceImpl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.backend/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Register/Domain/Models/Business.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Domain/Models/Business.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Register/Domain/Models/BusinessProject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Domain/Models/BusinessProject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Register/Domain/Models/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Domain/Models/Client.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Register/Controllers/BusinessesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Controllers/BusinessesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Register/Domain/Repositories/IBusinessRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Domain/Repositories/IBusinessRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/Register/Mapping/ModelToResourceProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Mapping/ModelToResourceProfile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/Register/Mapping/ResourceToModelProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Mapping/ResourceToModelProfile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/Register/Persistence/Context/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Persistence/Context/AppDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/bin/Debug/net6.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/bin/Debug/net6.0/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Register/Persistence/Repositories/BusinessRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Persistence/Repositories/BusinessRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.genruntimeconfig.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/ref/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/ref/backend.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/refint/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/refint/backend.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/backend.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/backend.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/backend.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/backend.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.exe" beforeDir="false" afterPath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +51,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>

@@ -27,7 +27,14 @@ public class BusinessesController: ControllerBase
         var resources = _mapper.Map<IEnumerable<Business>, IEnumerable<BusinessResource>>(businesses);
         return resources;
     }
-    
+    [HttpGet("{email}")]
+    public async Task<BusinessResource> GetAccount(string email)
+    {
+        var businessesAccount = await _businessService.GetAccount(email);
+        Console.WriteLine(businessesAccount.Resource);
+        var resources = _mapper.Map<Business, BusinessResource>(businessesAccount.Resource);
+        return resources;
+    }
     [HttpPost]
     public async Task<IActionResult> PostAsync([FromBody] SaveBusinessResource resource)
     {
