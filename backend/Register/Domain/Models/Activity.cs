@@ -10,7 +10,7 @@ public class Activity
     
     public string FinisDate { get; set; }
 
-    public long PortfolioId { get; set; }
+    public int PortfolioId { get; set; }
     
     public Portfolio Portfolio { get; set; }
 }
