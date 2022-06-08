@@ -12,6 +12,10 @@ public class AppDbContext: DbContext
     public DbSet<Client> Clients { get; set; }
     public DbSet<Business> Businesses { get; set; }
     public DbSet<BusinessProject> BusinessProjects { get; set; }
+    
+    public DbSet<Activity> Activities { get; set; }
+    
+    public DbSet<Portfolio> Portfolios { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -38,6 +42,26 @@ public class AppDbContext: DbContext
         builder.Entity<Client>().Property(p => p.ConfirmPassword).IsRequired().HasMaxLength(50);
         builder.Entity<Client>().Property(p => p.FirstName).IsRequired().HasMaxLength(50);
         builder.Entity<Client>().Property(p => p.LastName).IsRequired().HasMaxLength(50);
+        
+        builder.Entity<Portfolio>().ToTable("Portfolio");
+        builder.Entity<Portfolio>().HasKey(p => p.Id);
+        builder.Entity<Portfolio>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
+        builder.Entity<Portfolio>().Property(p => p.Email).IsRequired().HasMaxLength(50);
+        builder.Entity<Portfolio>().Property(p => p.Name).IsRequired().HasMaxLength(50);
+        builder.Entity<Portfolio>().Property(p => p.Phone).IsRequired();
+
+        builder.Entity<Portfolio>()
+            .HasMany(p => p.Activities)
+            .WithOne(p => p.Portfolio)
+            .HasForeignKey(p => p.PortfolioId);  
+
+        builder.Entity<Activity>().ToTable("Activity");
+        builder.Entity<Activity>().HasKey(p => p.Id);
+        builder.Entity<Activity>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
+        builder.Entity<Activity>().Property(p => p.Description).IsRequired().HasMaxLength(50);
+        builder.Entity<Activity>().Property(p => p.StartDate).IsRequired().HasMaxLength(50);
+        builder.Entity<Activity>().Property(p => p.FinisDate).IsRequired().HasMaxLength(50);
+        
         
         builder.Entity<BusinessProject>().ToTable("BusinessProjects");
         builder.Entity<BusinessProject>().HasKey(p => p.Id);
