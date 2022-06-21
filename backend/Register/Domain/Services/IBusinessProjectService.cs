@@ -8,4 +8,5 @@ public interface IBusinessProjectService
     Task<IEnumerable<BusinessProject>> ListAsync();
     Task<BusinessProjectResponse> CreateAsync(BusinessProject businessProject);
     Task<BusinessProjectResponse> DeleteAsync(int businessId);
+    Task<BusinessProjectResponse> GetBusinessProjectById(long id);
 }

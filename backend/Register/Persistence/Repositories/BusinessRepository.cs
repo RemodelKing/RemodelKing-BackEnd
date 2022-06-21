@@ -19,7 +19,7 @@ public class BusinessRepository: BaseRepository, IBusinessRepository
 
     public async Task<Business> FindByIdAsync(long id)
     {
-        return await _context.Businesses.FindAsync();
+        return await _context.Businesses.FindAsync(id);
     }
 
     public async Task AddAsync(Business business)

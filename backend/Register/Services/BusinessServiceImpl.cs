@@ -51,4 +51,16 @@ public class BusinessServiceImpl: IBusinessService
             return new BusinessResponse($"Failed to find a current user business: {e.Message}");
         }
     }
+    public async Task<BusinessResponse> GetAccountById(long id)
+    {
+        try
+        {
+            var currentUser = await _businessRepository.FindByIdAsync(id);
+            return new BusinessResponse(currentUser);
+        }
+        catch (Exception e)
+        {
+            return new BusinessResponse($"Failed to find a current user business: {e.Message}");
+        }
+    }
 }

@@ -2,7 +2,7 @@
 
 public class Portfolio
 {
-    public int Id { get; set; }
+    public long Id { get; set; }
     public string Name { get; set; }
     
     public long ContractDate { get; set; }
@@ -11,5 +11,7 @@ public class Portfolio
     
     public long Phone { get; set; }
     
-    public IList<Activity> Activity { get; set; } = new List<Activity>();
+    public Business Business { get; set; }
+    public long BusinessId { get; set; }
+    public IList<Activity> Activities { get; set; } = new List<Activity>();
 }

@@ -14,12 +14,15 @@ public class PortfolioRepository: BaseRepository, IPortfolioRepository
     public async Task<IEnumerable<Portfolio>> ListAsync()
     {
         return await _context.Portfolios
+            .Include(p=>p.Business)
             .ToListAsync();
     }
 
-    public async Task<Portfolio> FindByIdAsync(int id)
+    public async Task<Portfolio> FindByIdAsync(long id)
     {
-        return await _context.Portfolios.FindAsync();
+        return await _context.Portfolios
+            .Include(p=>p.Business)
+            .FirstOrDefaultAsync(p=>p.Id == id);
     }
 
     public async Task AddAsync(Portfolio portfolio)
@@ -27,4 +30,8 @@ public class PortfolioRepository: BaseRepository, IPortfolioRepository
         await _context.Portfolios.AddAsync(portfolio);
     }
 
+    public void DeleteAsync(Portfolio portfolio)
+    {
+        _context.Portfolios.Remove(portfolio);
+    }
 }

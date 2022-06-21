@@ -13,18 +13,22 @@ public class BusinessProjectRepository: BaseRepository, IBusinessProjectReposito
     }
     public async Task<IEnumerable<BusinessProject>> ListAsync()
     {
-        return await _context.BusinessProjects.ToListAsync();
+        return await _context.BusinessProjects
+            .Include(p=>p.Business)
+            .ToListAsync();
     }
-    public async Task<BusinessProject> FindByIdAsync(int id)
+    public async Task<BusinessProject> FindByIdAsync(long id)
     {
-        return await _context.BusinessProjects.FindAsync(id);
+        return await _context.BusinessProjects
+            .Include(p=>p.Business)
+            .FirstOrDefaultAsync(p=>p.Id == id);
     }
     public async Task AddAsync(BusinessProject businessProject)
     {
         await _context.BusinessProjects.AddAsync(businessProject);
     }
 
-    public async Task DeleteAsync(BusinessProject businessProject)
+    public void DeleteAsync(BusinessProject businessProject)
     {
         _context.BusinessProjects.Remove(businessProject);
     }
