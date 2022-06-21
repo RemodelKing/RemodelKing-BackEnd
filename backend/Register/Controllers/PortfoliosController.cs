@@ -27,7 +27,25 @@ public class PortfoliosController: ControllerBase
         var resources = _mapper.Map<IEnumerable<Portfolio>, IEnumerable<PortfolioResource>>(portfolios);
         return resources;
     }
-    
+    [HttpGet("{id}")]
+    public async Task<PortfolioResource> GetAccountById(long id)
+    {
+        var portfolioById = await _portfolioService.GetPortfolioById(id);
+        var resources = _mapper.Map<Portfolio, PortfolioResource>(portfolioById.Resource);
+        return resources;
+    }
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete(int id)
+    {
+        var result = await _portfolioService.DeleteAsync(id);
+
+        if (!result.Success)
+            return BadRequest(result.Message);
+
+        var businessProjectResource = _mapper.Map<Portfolio, PortfolioResource>(result.Resource);
+
+        return Ok(businessProjectResource);
+    } 
     [HttpPost]
     public async Task<IActionResult> PostAsync([FromBody] SavePortfolioResource resource)
     {

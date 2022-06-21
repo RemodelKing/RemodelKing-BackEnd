@@ -2,9 +2,11 @@
 
 public class PortfolioResource
 {
-    public int Id { get; set; }
+    public long Id { get; set; }
     public string Name { get; set; }
     public string Email { get; set; }
     public long Phone { get; set; }
-    
+    public long ContractDate { get; set; }
+    public BusinessResource Business { get; set; }
+    public long BusinessId { get; set; }
 }

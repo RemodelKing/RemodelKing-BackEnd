@@ -14,17 +14,30 @@ public class ActivityRepository: BaseRepository, IActivityRepository
 
     public async Task<IEnumerable<Activity>> ListAsync()
     {
-        return await _context.Activities.ToListAsync();
+        return await _context.Activities
+            .Include(p=>p.Portfolio)
+            .ToListAsync();
     }
 
-    public async Task<Activity> FindByIdAsync(int id)
+    public async Task<Activity> FindByIdAsync(long id)
     {
-        return await _context.Activities.FindAsync(id);
+        return await _context.Activities
+            .Include(p=>p.Portfolio)
+            .FirstOrDefaultAsync(p=>p.Id == id);
     }
 
     public async Task AddAsync(Activity activity)
     {
         await _context.Activities.AddAsync(activity);
     }
-    
+
+    public void UpdateAsync(Activity activity)
+    {
+        _context.Activities.Update(activity);
+    }
+
+    public void DeleteAsync(Activity activity)
+    {
+        _context.Activities.Remove(activity);
+    }
 }
