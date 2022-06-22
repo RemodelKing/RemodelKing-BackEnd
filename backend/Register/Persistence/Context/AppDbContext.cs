@@ -73,10 +73,10 @@ public class AppDbContext: DbContext
         builder.Entity<Activity>().ToTable("Activity");
         builder.Entity<Activity>().HasKey(p => p.Id);
         builder.Entity<Activity>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
-        builder.Entity<Activity>().Property(p => p.Description).IsRequired().HasMaxLength(50);
+        builder.Entity<Activity>().Property(p => p.Description).IsRequired();
         builder.Entity<Activity>().Property(p => p.Title).IsRequired().HasMaxLength(40);
-        builder.Entity<Activity>().Property(p => p.StartDate).IsRequired().HasMaxLength(50);
-        builder.Entity<Activity>().Property(p => p.FinisDate).IsRequired().HasMaxLength(50);
+        builder.Entity<Activity>().Property(p => p.StartDate).IsRequired();
+        builder.Entity<Activity>().Property(p => p.FinishDate).IsRequired();
         
         
         builder.Entity<BusinessProject>().ToTable("BusinessProjects");

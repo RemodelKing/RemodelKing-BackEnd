@@ -38,7 +38,7 @@ public class ActivityServiceImpl: IActivityService
         }
         catch (Exception e)
         {
-            return new ActivityResponse($"Failed to register a activity: {e.Message}");
+            return new ActivityResponse($"Failed to register an activity: {e.Message}");
         }
     }
 
@@ -56,7 +56,7 @@ public class ActivityServiceImpl: IActivityService
         existingActivity.Description = activity.Description;
         existingActivity.Title = activity.Title;
         existingActivity.StartDate = activity.StartDate;
-        existingActivity.FinisDate = activity.FinisDate;
+        existingActivity.FinishDate = activity.FinishDate;
         existingActivity.PortfolioId = activity.PortfolioId;
         try
         {

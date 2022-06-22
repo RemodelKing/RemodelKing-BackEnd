@@ -15,7 +15,7 @@ public class SaveActivityResource
     public string StartDate { get; set; }
     
     [Required]
-    public string FinisDate { get; set; }
+    public string FinishDate { get; set; }
     
     [Required]
     public long PortfolioId { get; set; }
