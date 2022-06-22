@@ -6,7 +6,7 @@ public class ActivityResource
     public string Description { get; set; }
     public string Title { get; set; }
     public string StartDate { get; set; }
-    public string FinisDate { get; set; }
+    public string FinishDate { get; set; }
     public PortfolioResource Portfolio { get; set; }
     public long PortfolioId { get; set; }
 }
