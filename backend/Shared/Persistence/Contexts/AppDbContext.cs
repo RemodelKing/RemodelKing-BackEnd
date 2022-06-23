@@ -36,6 +36,7 @@ public class AppDbContext: DbContext
         builder.Entity<Business>().Property(p => p.Score).IsRequired();
         builder.Entity<Business>().Property(p => p.WebSite).IsRequired();
         builder.Entity<Business>().Property(p => p.Days).IsRequired();
+        //builder.Entity<Business>().Property(p => p.ConfirmPassword).IsRequired();
 
             builder.Entity<Business>()
            .HasMany(p => p.BusinessProjects)

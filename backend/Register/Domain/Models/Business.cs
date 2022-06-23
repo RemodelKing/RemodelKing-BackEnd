@@ -25,6 +25,7 @@ public class Business
     public string Email { get; set; } = String.Empty;
     [JsonIgnore] 
     public string PasswordHash { get; set; }
+    //public string ConfirmPassword { get; set; } = String.Empty;
 
     //Relationship
     //public IList<Client> Client { get; set; } = new List<Client>();
