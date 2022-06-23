@@ -10,27 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="502bcef3-8177-4903-888e-0d0f82f19310" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.backend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Register/Domain/Models/Activity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Domain/Models/Activity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Register/Domain/Models/Portfolio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Domain/Models/Portfolio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Register/Domain/Repositories/IPortfolioRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Domain/Repositories/IPortfolioRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Register/Mapping/ModelToResourceProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Mapping/ModelToResourceProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Register/Mapping/ResourceToModelProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Mapping/ResourceToModelProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Register/Persistence/Context/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Persistence/Context/AppDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Register/Persistence/Repositories/PortfolioRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Persistence/Repositories/PortfolioRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/bin/Debug/net6.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/bin/Debug/net6.0/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.exe" beforeDir="false" afterPath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.genruntimeconfig.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/ref/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/ref/backend.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/refint/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/refint/backend.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/staticwebassets.pack.sentinel" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +89,7 @@
       <workItem from="1654572467141" duration="320000" />
       <workItem from="1654635704515" duration="2166000" />
       <workItem from="1654657074916" duration="613000" />
+      <workItem from="1654694436047" duration="1681000" />
     </task>
     <servers />
   </component>
