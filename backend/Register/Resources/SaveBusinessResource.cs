@@ -9,4 +9,14 @@ public class SaveBusinessResource: SaveUserResource
     public string Name { get; set; }
     [Required]
     public long Phone { get; set; }
+    [Required]
+    public String Description { get; set; }
+    [Required]
+    public String Img { get; set; }
+    [Required]
+    public String Address { get; set; }
+    public float Score { get; set; }
+    public String WebSite { get; set; }
+    [Required]
+    public String Days { get; set; }
 }

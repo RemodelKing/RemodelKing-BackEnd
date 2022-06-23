@@ -1,4 +1,4 @@
-﻿namespace backend.Register.Domain.Repositories;
+﻿namespace backend.Shared.Domain.Repositories;
 
 public interface IUnitOfWork
 {

@@ -43,4 +43,23 @@ public class BusinessProjectsController: ControllerBase
         var clientResource = _mapper.Map<BusinessProject, BusinessProjectResource>(result.Resource);
         return Ok(clientResource);
     }
+    [HttpGet("{id}")]
+    public async Task<BusinessProjectResource> GetAccountById(long id)
+    {
+        var businessesAccountById = await _businessProjectService.GetBusinessProjectById(id);
+        var resources = _mapper.Map<BusinessProject, BusinessProjectResource>(businessesAccountById.Resource);
+        return resources;
+    }
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete(int id)
+    {
+        var result = await _businessProjectService.DeleteAsync(id);
+
+        if (!result.Success)
+            return BadRequest(result.Message);
+
+        var businessProjectResource = _mapper.Map<BusinessProject, BusinessProjectResource>(result.Resource);
+
+        return Ok(businessProjectResource);
+    } 
 }

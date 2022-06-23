@@ -2,15 +2,21 @@
 
 namespace backend.Register.Resources;
 
-public class SaveActivityResource: UserResource
+public class SaveActivityResource
 {
    
     [Required]
     public string Description { get; set; }
     
     [Required]
+    public string Title { get; set; }
+    
+    [Required]
     public string StartDate { get; set; }
     
     [Required]
-    public string FinisDate { get; set; }
+    public string FinishDate { get; set; }
+    
+    [Required]
+    public long PortfolioId { get; set; }
 }
