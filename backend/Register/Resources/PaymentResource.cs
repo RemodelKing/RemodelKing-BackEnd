@@ -1,4 +1,7 @@
-﻿namespace backend.RemodelKing.Resources;
+﻿using backend.Register.Domain.Models;
+using backend.Register.Resources;
+
+namespace backend.RemodelKing.Resources;
 
 public class PaymentResource
 {
@@ -8,4 +11,6 @@ public class PaymentResource
     public string CardHolder { get; set; }
     public string CardIssuer { get; set; }
     public string CVV { get; set; }
+    public BusinessResource Business { get; set; }
+    public long BusinessId { get; set; }
 }

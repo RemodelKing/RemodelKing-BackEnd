@@ -1,5 +1,6 @@
-namespace backend.Security.Resources;
+using backend.Register.Resources;
 
+namespace backend.Security.Resources;
 public class UserResourceX
 {
     /*public int Id { get; set; }
@@ -15,5 +16,4 @@ public class UserResourceX
     public string Img { get; set; }
     public string WebSite { get; set; }
     public string Days { get; set; }
-    public string ConfirmPassword { get; set; }
 }

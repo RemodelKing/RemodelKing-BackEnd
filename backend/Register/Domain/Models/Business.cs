@@ -1,4 +1,5 @@
 ﻿using System.Text.Json.Serialization;
+using backend.RemodelKing.Domain.Models;
 
 namespace backend.Register.Domain.Models;
 
@@ -31,6 +32,8 @@ public class Business
     //public IList<Client> Client { get; set; } = new List<Client>();
     public IList<BusinessProject> BusinessProjects { get; set; } = new List<BusinessProject>();
     public IList<Portfolio> Portfolios { get; set; } = new List<Portfolio>();
+    public Payment Payment { get; set; }
     
-    
+
+
 }
