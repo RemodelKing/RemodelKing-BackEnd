@@ -1,7 +1,8 @@
-﻿using backend.Register.Persistence.Context;
-using backend.Register.Persistence.Repositories;
+﻿using backend.Register.Persistence.Repositories;
 using backend.RemodelKing.Domain.Models;
 using backend.RemodelKing.Domain.Repositories;
+using backend.Shared.Persistence.Contexts;
+using backend.Shared.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace backend.RemodelKing.Persistence.Repositories;

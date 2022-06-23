@@ -2,6 +2,7 @@
 using backend.Register.Domain.Repositories;
 using backend.Register.Domain.Services;
 using backend.Register.Domain.Services.Communication;
+using backend.Shared.Domain.Repositories;
 
 namespace backend.Register.Services;
 

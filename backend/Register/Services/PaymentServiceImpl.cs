@@ -3,6 +3,7 @@ using backend.RemodelKing.Domain.Models;
 using backend.RemodelKing.Domain.Repositories;
 using backend.RemodelKing.Domain.Services;
 using backend.RemodelKing.Domain.Services.Communication;
+using backend.Shared.Domain.Repositories;
 
 namespace backend.RemodelKing.Services;
 
