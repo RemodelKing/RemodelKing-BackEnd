@@ -4,55 +4,21 @@ namespace backend.Register.Domain.Models;
 
 public class Business
 {
-    public string? _description = String.Empty;
+    /*public string? _description = String.Empty;
     public string? _img = String.Empty;
     public string? _webSite = String.Empty;
-    public string? _days = String.Empty;
+    public string? _days = String.Empty;*/
     public string Name { get; set; } = String.Empty;
     public long Phone { get; set; }
 
-    public String Description
-    {
-        get
-        {
-            return _description;
-        }
-        set
-        {
-            _description = value;
-        }
-    }
-    public String Img
-    {
-        get { return _img;}
-        set { _img = value; }
-    }
+    public String Description { get; set; } = String.Empty;
+    public String Img { get; set; } = String.Empty;
     public String Address { get; set; } = String.Empty;
     public float Score { get; set; }
 
-    public String WebSite
-    {
-        get
-        {
-            return _webSite;
-        }
-        set
-        {
-            _webSite = value;
-        }
-    }
+    public String WebSite { get; set; } = String.Empty;
 
-    public String Days
-    {
-        get
-        {
-            return _days;
-        }
-        set
-        {
-            _days = value;
-        }
-    }
+    public String Days { get; set; } = String.Empty;
     
     //Security
     public long Id { get; set; }

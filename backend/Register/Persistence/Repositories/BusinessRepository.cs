@@ -32,4 +32,9 @@ public class BusinessRepository: BaseRepository, IBusinessRepository
         return await _context.Businesses
             .FirstOrDefaultAsync(p => p.Email == email);
     }
+
+    public void Update(Business business)
+    {
+        _context.Businesses.Update(business);
+    }
 }

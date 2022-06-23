@@ -9,4 +9,5 @@ public interface IBusinessRepository
     Task AddAsync(Business business);
     //Task<Business> FindByNameAsync(string name);
     Task<Business> FindByEmailAsync(string email);
+    void Update(Business business);
 }

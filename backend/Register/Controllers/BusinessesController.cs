@@ -58,4 +58,18 @@ public class BusinessesController: ControllerBase
         var clientResource = _mapper.Map<Business, BusinessResource>(result.Resource);
         return Ok(clientResource);
     }
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> PutAsync(long id, [FromBody] SaveBusinessResource resource)
+    {
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState.GetErrorMessages());
+        var business = _mapper.Map<SaveBusinessResource, Business>(resource);
+        var result = await _businessService.UpdateAsync(id, business);
+        if (!result.Success)
+            return BadRequest(result.Message);
+        var businessResource = _mapper.Map<Business, BusinessResource>(result.Resource);
+        return Ok(businessResource);
+
+    }
 }

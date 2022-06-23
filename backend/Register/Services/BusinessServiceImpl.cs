@@ -2,6 +2,7 @@
 using backend.Register.Domain.Repositories;
 using backend.Register.Domain.Services;
 using backend.Register.Domain.Services.Communication;
+using backend.Register.Resources;
 using backend.Shared.Domain.Repositories;
 
 namespace backend.Register.Services;
@@ -62,6 +63,32 @@ public class BusinessServiceImpl: IBusinessService
         catch (Exception e)
         {
             return new BusinessResponse($"Failed to find a current user business: {e.Message}");
+        }
+    }
+
+    public async Task<BusinessResponse> UpdateAsync(long id, Business business)
+    {
+        var existingBusiness = await _businessRepository.FindByIdAsync(id);
+        if (existingBusiness == null)
+            return new BusinessResponse("Business already exists");
+        existingBusiness.Address = business.Address;
+        existingBusiness.Days = business.Days;
+        existingBusiness.Description = business.Description;
+        existingBusiness.Email = business.Email;
+        existingBusiness.Img = business.Img;
+        existingBusiness.Name = business.Name;
+        existingBusiness.Phone = business.Phone;
+        existingBusiness.Score = business.Score;
+        existingBusiness.WebSite = business.WebSite;
+        try
+        {
+             _businessRepository.Update(existingBusiness);
+             await _unitOfWork.CompleteAsync();
+             return new BusinessResponse(existingBusiness);
+        }
+        catch (Exception e)
+        {
+            return new BusinessResponse($"Failed to updating the business: {e.Message}");
         }
     }
 }
