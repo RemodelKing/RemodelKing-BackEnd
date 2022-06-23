@@ -102,6 +102,12 @@ public class AppDbContext: DbContext
         builder.Entity<Payment>().Property(p => p.CardIssuer).IsRequired();
         builder.Entity<Payment>().Property(p => p.CVV).IsRequired();
         builder.Entity<Payment>().Property(p => p.ExpiryDate).IsRequired();
+
+        builder.Entity<Business>()
+            .HasOne(p => p.Payment)
+            .WithOne(p => p.Business)
+            .HasForeignKey<Payment>(p => p.BusinessId);
+        
         builder.UseSnakeCaseNamingConvention();
     }
 }

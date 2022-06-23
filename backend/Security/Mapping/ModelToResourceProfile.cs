@@ -13,6 +13,8 @@ public class ModelToResourceProfile : Profile
     public ModelToResourceProfile()
     {
         CreateMap<Business, AuthenticateResponse>();
+        CreateMap<Business, RegisterResponse>();
         CreateMap<Business, UserResourceX>();
+        CreateMap<Business, RegisterRequest>();
     }
 }

@@ -14,4 +14,5 @@ public class SavePaymentResource
     public string CardIssuer { get; set; }
     [Required]
     public string CVV { get; set; }
+    public long BusinessId { get; set; }
 }

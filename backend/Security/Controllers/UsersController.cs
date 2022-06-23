@@ -6,6 +6,7 @@ using backend.Security.Domain.Models;
 using backend.Security.Domain.Services;
 using backend.Security.Domain.Services.Communication;
 using backend.Security.Resources;
+using backend.Shared.Extensions;
 using Microsoft.AspNetCore.Mvc;
 
 namespace backend.Security.Controllers;
@@ -36,8 +37,12 @@ public class UsersController : ControllerBase
     [HttpPost("sign-up")]
     public async Task<IActionResult> Register(RegisterRequest request)
     {
-        await _userService.RegisterAsync(request);
-        return Ok(new { message = "Registration successful" });
+        //var model = _mapper.Map<RegisterRequest, Business>(request);
+        var response = await _userService.RegisterAsync(request);
+        //if (!result.Success)
+          //  return BadRequest(result.Message);
+        //var resource = _mapper.Map<Business, RegisterRequest>(result.Resource);
+        return Ok(response);
     }
 
     [HttpGet]
