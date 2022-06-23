@@ -47,15 +47,20 @@ public class AppDbContext: DbContext
                 .WithOne(p => p.Business)
                 .HasForeignKey(p => p.BusinessId);
 
-        builder.Entity<Client>().ToTable("Clients");
-        builder.Entity<Client>().HasKey(p => p.Id);
-        builder.Entity<Client>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
-        builder.Entity<Client>().Property(p => p.Email).IsRequired().HasMaxLength(50);
-        builder.Entity<Client>().Property(p => p.Password).IsRequired().HasMaxLength(50);
-        builder.Entity<Client>().Property(p => p.ConfirmPassword).IsRequired().HasMaxLength(50);
-        builder.Entity<Client>().Property(p => p.FirstName).IsRequired().HasMaxLength(50);
-        builder.Entity<Client>().Property(p => p.LastName).IsRequired().HasMaxLength(50);
-        
+            builder.Entity<Client>().ToTable("Clients");
+            builder.Entity<Client>().HasKey(p => p.Id);
+            builder.Entity<Client>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
+            builder.Entity<Client>().Property(p => p.Name).IsRequired().HasMaxLength(50);
+            builder.Entity<Client>().Property(p => p.LastName).IsRequired().HasMaxLength(50);
+            builder.Entity<Client>().Property(p => p.Phone).IsRequired();
+            builder.Entity<Client>().Property(p => p.Address).IsRequired().HasMaxLength(80);
+            builder.Entity<Client>().Property(p => p.Img).IsRequired();
+    
+            builder.Entity<Client>()
+                .HasMany(p => p.Requests)
+                .WithOne(p => p.Client)
+                .HasForeignKey(p => p.ClientId);
+            
         builder.Entity<Portfolio>().ToTable("Portfolios");
         builder.Entity<Portfolio>().HasKey(p => p.Id);
         builder.Entity<Portfolio>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
@@ -94,6 +99,7 @@ public class AppDbContext: DbContext
         builder.Entity<Request>().Property(p => p.Email).IsRequired().HasMaxLength(50);
         builder.Entity<Request>().Property(p => p.Title).IsRequired().HasMaxLength(50);
         builder.Entity<Request>().Property(p => p.Description).IsRequired().HasMaxLength(50);
+        
         builder.Entity<Payment>().ToTable("Payments");
         builder.Entity<Payment>().HasKey(p => p.Id);
         builder.Entity<Payment>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
