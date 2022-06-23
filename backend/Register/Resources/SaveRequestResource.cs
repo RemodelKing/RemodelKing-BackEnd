@@ -5,9 +5,6 @@ namespace backend.Register.Resources;
 public class SaveRequestResource
 {
     [Required]
-    public int Id { get; set; }
-    
-    [Required]
     [MaxLength(50)]
     public string BusinessName { get; set; }
     
@@ -22,4 +19,6 @@ public class SaveRequestResource
     [Required]
     [MaxLength(50)]
     public string Description { get; set; }
+    [Required]
+    public long ClientId { get; set; }
 }

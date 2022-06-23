@@ -17,7 +17,7 @@ public class RequestRepository : BaseRepository, IRequestRepository
         return await _context.Requests.ToListAsync();
     }
 
-    public async Task<Request> FindByIdAsync(int id)
+    public async Task<Request> FindByIdAsync(long id)
     {
         return await _context.Requests.FindAsync(id);
     }

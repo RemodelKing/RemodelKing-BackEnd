@@ -6494,24 +6494,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Luis\\.nuget\\packages\\": {}
+    "C:\\Users\\SETTING\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Luis\\Documents\\RemodelKing-BackEnd-develop\\backend\\backend.csproj",
+      "projectUniqueName": "C:\\Users\\SETTING\\Documents\\Ciclo 5 UPC\\Aplicaciones Web\\Entrega Final\\Final con luis\\RemodelKing-BackEnd-develop\\backend\\backend.csproj",
       "projectName": "backend",
-      "projectPath": "C:\\Users\\Luis\\Documents\\RemodelKing-BackEnd-develop\\backend\\backend.csproj",
-      "packagesPath": "C:\\Users\\Luis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Luis\\Documents\\RemodelKing-BackEnd-develop\\backend\\obj\\",
+      "projectPath": "C:\\Users\\SETTING\\Documents\\Ciclo 5 UPC\\Aplicaciones Web\\Entrega Final\\Final con luis\\RemodelKing-BackEnd-develop\\backend\\backend.csproj",
+      "packagesPath": "C:\\Users\\SETTING\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SETTING\\Documents\\Ciclo 5 UPC\\Aplicaciones Web\\Entrega Final\\Final con luis\\RemodelKing-BackEnd-develop\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Luis\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\SETTING\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6593,7 +6595,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
