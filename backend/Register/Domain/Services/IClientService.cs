@@ -7,5 +7,7 @@ public interface IClientService
 {
     Task<IEnumerable<Client>> ListAsync();
     Task<ClientResponse> CreateAsync(Client client);
-    //Task<ClientResponse> DeleteAsync(int id);
+    Task<ClientResponse> GetAccount(string email);
+    Task<ClientResponse> GetAccountById(int id);
+    Task<ClientResponse> UpdateAsync(int id, Client client);
 }

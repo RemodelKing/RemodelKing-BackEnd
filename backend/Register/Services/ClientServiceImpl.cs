@@ -40,5 +40,53 @@ public class ClientServiceImpl: IClientService
             return new ClientResponse($"Failed to register a client: {e.Message}");
         }
     }
-    
+
+    public async Task<ClientResponse> GetAccount(string email)
+    {
+        try
+        {
+            var currentUser = await _clientRepository.FindByEmailAsync(email);
+            return new ClientResponse(currentUser);
+        }
+        catch (Exception e)
+        {
+            return new ClientResponse($"Failed to find a current user client: {e.Message}");
+        }
+    }
+
+    public async Task<ClientResponse> GetAccountById(int id)
+    {
+        try
+        {
+            var currentUser = await _clientRepository.FindByIdAsync(id);
+            return new ClientResponse(currentUser);
+        }
+        catch (Exception e)
+        {
+            return new ClientResponse($"Failed to find a current user client: {e.Message}");
+        }
+    }
+
+    public async Task<ClientResponse> UpdateAsync(int id, Client client)
+    {
+        var existingClient = await _clientRepository.FindByIdAsync(id);
+        if (existingClient == null)
+            return new ClientResponse("Client already exists");
+        existingClient.FirstName = client.FirstName;
+        existingClient.LastName = client.LastName;
+        existingClient.Id = client.Id;
+        existingClient.Email = client.Email;
+        existingClient.Password = client.Password;
+        existingClient.ConfirmPassword = client.ConfirmPassword;
+        try
+        {
+            _clientRepository.Update(existingClient);
+            await _unitOfWork.CompleteAsync();
+            return new ClientResponse(existingClient);
+        }
+        catch (Exception e)
+        {
+            return new ClientResponse($"Failed to updating the client: {e.Message}");
+        }
+    }
 }

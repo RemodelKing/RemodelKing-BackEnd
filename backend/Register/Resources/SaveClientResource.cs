@@ -2,14 +2,26 @@
 
 namespace backend.Register.Resources;
 
-public class SaveClientResource: UserResource
+public class SaveClientResource: SaveUserResource
 {
-   
     [Required]
     [MaxLength(50)]
     public string FirstName { get; set; }
+    
     [Required]
     [MaxLength(50)]
     public string LastName { get; set; }
+    
+    [Required]
+    public long Id { get; set; }
+    
+    [Required]
+    public string Email { get; set; }
+    
+    [Required]
+    public string Password { get; set; }
+    
+    [Required]
+    public string ConfirmPassword { get; set; }
     
 }
