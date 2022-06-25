@@ -118,9 +118,9 @@ builder.Services.AddScoped<IJwtHandler, JwtHandler>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 
-builder.Services.AddScoped<IJwtHandler, JwtHandler>();
-builder.Services.AddScoped<IUserClientRepository, UserClientRepository>();
-builder.Services.AddScoped<IUserClientService, UserClientService>();
+// builder.Services.AddScoped<IJwtHandler, JwtHandler>();
+// builder.Services.AddScoped<IUserClientRepository, UserClientRepository>();
+// builder.Services.AddScoped<IUserClientService, UserClientService>();
 // AutoMapper Configuration
 builder.Services.AddAutoMapper(
     typeof(backend.Register.Mapping.ModelToResourceProfile),
@@ -146,7 +146,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 app.UseMiddleware<JwtMiddleware>();
-app.UseMiddleware<JwtMiddlewareClient>();
+// app.UseMiddleware<JwtMiddlewareClient>();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
