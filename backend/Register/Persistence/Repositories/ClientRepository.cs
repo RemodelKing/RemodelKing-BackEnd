@@ -27,5 +27,15 @@ public class ClientRepository: BaseRepository, IClientRepository
     {
         await _context.Clients.AddAsync(client);
     }
-    
+
+    public async Task<Client> FindByEmailAsync(string email)
+    {
+        return await _context.Clients
+            .FirstOrDefaultAsync(p => p.Email == email);
+    }
+
+    public void Update(Client client)
+    {
+        _context.Clients.Update(client);
+    }
 }

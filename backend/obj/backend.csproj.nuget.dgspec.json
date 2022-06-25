@@ -1,6 +1,22 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
+    "C:\\Users\\oscar\\OneDrive\\Escritorio\\ProyectoTB3\\RemodelKing-BackEnd\\backend\\backend.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\oscar\\OneDrive\\Escritorio\\ProyectoTB3\\RemodelKing-BackEnd\\backend\\backend.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\oscar\\OneDrive\\Escritorio\\ProyectoTB3\\RemodelKing-BackEnd\\backend\\backend.csproj",
+        "projectName": "backend",
+        "projectPath": "C:\\Users\\oscar\\OneDrive\\Escritorio\\ProyectoTB3\\RemodelKing-BackEnd\\backend\\backend.csproj",
+        "packagesPath": "C:\\Users\\oscar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\oscar\\OneDrive\\Escritorio\\ProyectoTB3\\RemodelKing-BackEnd\\backend\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\oscar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
     "C:\\Users\\SETTING\\Documents\\Ciclo 5 UPC\\Aplicaciones Web\\Entrega Final\\Final con luis\\RemodelKing-BackEnd-develop\\backend\\backend.csproj": {}
   },
   "projects": {
@@ -15,6 +31,7 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SETTING\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 8165ac4de3893afbf3bb013fa17c0cc69b8cc72d
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -103,7 +120,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+=======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+>>>>>>> 8165ac4de3893afbf3bb013fa17c0cc69b8cc72d
         }
       }
     }

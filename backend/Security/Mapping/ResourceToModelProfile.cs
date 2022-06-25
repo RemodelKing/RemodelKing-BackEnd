@@ -17,7 +17,6 @@ public class ResourceToModelProfile : Profile
                     if (property.GetType() == typeof(string) && string.IsNullOrEmpty((string)property)) return false;
                     return true;
                 }
-                
             ));
     }
 }
