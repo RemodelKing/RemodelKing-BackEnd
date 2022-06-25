@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace backend.Security.Controllers;
 
-[Authorize]
+[AuthorizeClient]
 [ApiController]
 [Route("/api/v1/[controller]")]
 public class UsersClientController : ControllerBase
