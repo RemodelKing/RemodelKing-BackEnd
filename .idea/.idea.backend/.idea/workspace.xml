@@ -33,6 +33,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.backend">
     <configuration name="backend" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/backend/backend.csproj" />
@@ -91,7 +97,9 @@
       <workItem from="1655829471927" duration="3079000" />
       <workItem from="1655842861862" duration="1678000" />
       <workItem from="1655866874581" duration="619000" />
-      <workItem from="1655940487339" duration="11582000" />
+      <workItem from="1655940487339" duration="19704000" />
+      <workItem from="1655996964767" duration="13064000" />
+      <workItem from="1656024608797" duration="766000" />
     </task>
     <servers />
   </component>

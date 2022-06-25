@@ -10,12 +10,14 @@ namespace backend.RemodelKing.Services;
 public class PaymentServiceImpl: IPaymentService
 {
     private readonly IPaymentRepository _paymentRepository;
+    private readonly IBusinessRepository _businessRepository;
     private readonly IUnitOfWork _unitOfWork;
 
-    public PaymentServiceImpl(IPaymentRepository paymentRepository, IUnitOfWork unitOfWork)
+    public PaymentServiceImpl(IPaymentRepository paymentRepository, IUnitOfWork unitOfWork, IBusinessRepository businessRepository)
     {
         _paymentRepository = paymentRepository;
         _unitOfWork = unitOfWork;
+        _businessRepository = businessRepository;
     }
 
     public async Task<IEnumerable<Payment>> ListAsync()
@@ -25,6 +27,9 @@ public class PaymentServiceImpl: IPaymentService
 
     public async Task<PaymentResponse> CreateAsync(Payment payment)
     {
+        var businessExists = await _businessRepository.FindByIdAsync(payment.BusinessId);
+        if (businessExists == null)
+            return new PaymentResponse("Business doesn't exist");
         try
         {
             await _paymentRepository.AddAsync(payment);

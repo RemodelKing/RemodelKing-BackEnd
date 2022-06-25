@@ -26,11 +26,6 @@ public class ClientServiceImpl: IClientService
     {
         try
         {
-            //Validations
-            if (client.Password != client.ConfirmPassword)
-                return new ClientResponse("Different passwords was received");
-
-            //Actions
             await _clientRepository.AddAsync(client);
             await _unitOfWork.CompleteAsync();
             return new ClientResponse(client);
