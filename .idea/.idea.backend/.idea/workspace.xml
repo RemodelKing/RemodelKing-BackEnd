@@ -8,7 +8,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="502bcef3-8177-4903-888e-0d0f82f19310" name="Changes" comment="" />
+    <list default="true" id="502bcef3-8177-4903-888e-0d0f82f19310" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.backend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Register/Domain/Models/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Domain/Models/Client.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Register/Domain/Repositories/IClientRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Domain/Repositories/IClientRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Register/Domain/Services/IClientService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Domain/Services/IClientService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Register/Resources/ClientResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Resources/ClientResource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Register/Resources/SaveClientResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Resources/SaveClientResource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Register/Services/ClientServiceImpl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Services/ClientServiceImpl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Shared/Persistence/Contexts/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Shared/Persistence/Contexts/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/bin/Debug/net6.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/bin/Debug/net6.0/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.exe" beforeDir="false" afterPath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/ref/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/ref/backend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/refint/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/refint/backend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/obj/backend.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/backend.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/obj/backend.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/backend.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/staticwebassets.pack.sentinel" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +54,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="Toolset" />
+  </component>
   <component name="ProjectId" id="2A63nQJ9JpWrp56uFMLyCTGZhFe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -34,10 +66,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.backend">
     <configuration name="backend" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
@@ -100,6 +136,8 @@
       <workItem from="1655940487339" duration="19704000" />
       <workItem from="1655996964767" duration="13064000" />
       <workItem from="1656024608797" duration="766000" />
+      <workItem from="1656128235600" duration="705000" />
+      <workItem from="1656129054630" duration="3913000" />
     </task>
     <servers />
   </component>
