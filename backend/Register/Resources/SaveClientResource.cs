@@ -6,11 +6,21 @@ public class SaveClientResource: SaveUserResource
 {
     [Required]
     [MaxLength(50)]
+<<<<<<< HEAD
     public string FirstName { get; set; }
     
+=======
+    public string Name { get; set; }
+>>>>>>> develop
     [Required]
     [MaxLength(50)]
     public string LastName { get; set; }
+    [Required]
+    public string Phone { get; set; }
+    [Required]
+    public string Address { get; set; }
+    [Required]
+    public string Img { get; set; }
     
     [Required]
     public long Id { get; set; }

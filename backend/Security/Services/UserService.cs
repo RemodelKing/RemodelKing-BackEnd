@@ -1,6 +1,7 @@
 using AutoMapper;
 using backend.Register.Domain.Models;
 using backend.Register.Domain.Repositories;
+using backend.Register.Domain.Services.Communication;
 using backend.Security.Authorization.Handlers.Interfaces;
 using backend.Security.Domain.Models;
 using backend.Security.Domain.Repositories;
@@ -62,7 +63,7 @@ public class UserService : IUserService
         return user;
     }
 
-    public async Task RegisterAsync(RegisterRequest request)
+    public async Task<RegisterResponse> RegisterAsync(RegisterRequest request)
     {
         // Validate if Username is already taken
         if (_userRepository.ExistsByEmail(request.Email)) 
@@ -79,6 +80,8 @@ public class UserService : IUserService
         {
             await _userRepository.AddAsync(user);
             await _unitOfWork.CompleteAsync();
+            var response = _mapper.Map<RegisterResponse>(user);
+            return response;
         }
         catch (Exception e)
         {

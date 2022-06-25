@@ -18,7 +18,7 @@ public class ClientRepository: BaseRepository, IClientRepository
         return await _context.Clients.ToListAsync();
     }
 
-    public async Task<Client> FindByIdAsync(int id)
+    public async Task<Client> FindByIdAsync(long id)
     {
         return await _context.Clients.FindAsync(id);
     }

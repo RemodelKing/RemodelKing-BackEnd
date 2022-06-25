@@ -1,4 +1,6 @@
-﻿namespace backend.RemodelKing.Domain.Models;
+﻿using backend.Register.Domain.Models;
+
+namespace backend.RemodelKing.Domain.Models;
 
 public class Payment
 {
@@ -8,4 +10,6 @@ public class Payment
     public string CardHolder { get; set; }
     public string CardIssuer { get; set; }
     public string CVV { get; set; }
+    public Business Business { get; set; }
+    public long BusinessId { get; set; }
 }
