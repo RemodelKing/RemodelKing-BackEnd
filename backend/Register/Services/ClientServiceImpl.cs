@@ -49,7 +49,7 @@ public class ClientServiceImpl: IClientService
         }
     }
 
-    public async Task<ClientResponse> GetAccountById(int id)
+    public async Task<ClientResponse> GetAccountById(long id)
     {
         try
         {
@@ -62,17 +62,20 @@ public class ClientServiceImpl: IClientService
         }
     }
 
-    public async Task<ClientResponse> UpdateAsync(int id, Client client)
+    public async Task<ClientResponse> UpdateAsync(long id, Client client)
     {
         var existingClient = await _clientRepository.FindByIdAsync(id);
         if (existingClient == null)
             return new ClientResponse("Client already exists");
-        existingClient.FirstName = client.FirstName;
+        existingClient.Name = client.Name;
         existingClient.LastName = client.LastName;
         existingClient.Id = client.Id;
         existingClient.Email = client.Email;
         existingClient.Password = client.Password;
         existingClient.ConfirmPassword = client.ConfirmPassword;
+        existingClient.Phone = client.Phone;
+        existingClient.Address = client.Address;
+        existingClient.Img = client.Img;
         try
         {
             _clientRepository.Update(existingClient);
