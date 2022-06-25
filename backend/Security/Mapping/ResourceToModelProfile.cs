@@ -18,5 +18,15 @@ public class ResourceToModelProfile : Profile
                     return true;
                 }
             ));
+        
+        CreateMap<RegisterClientRequest, Client>();
+        CreateMap<UpdateClientRequest, Client>().ForAllMembers(options => 
+            options.Condition((source, target, property) =>
+                {
+                    if (property == null) return false;
+                    if (property.GetType() == typeof(string) && string.IsNullOrEmpty((string)property)) return false;
+                    return true;
+                }
+            ));
     }
 }

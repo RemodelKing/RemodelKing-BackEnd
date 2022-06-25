@@ -5,6 +5,6 @@ namespace backend.Security.Authorization.Handlers.Interfaces;
 
 public interface IJwtHandler
 {
-    string GenerateToken(Business user);
-    int? ValidateToken(string token);
+    string GenerateToken(long id,string email, string type);
+    ClaimsToken? ValidateToken(string token);
 }

@@ -1,22 +1,22 @@
-using backend.Security.Authorization.Handlers.Interfaces;
+﻿using backend.Security.Authorization.Handlers.Interfaces;
 using backend.Security.Authorization.Settings;
 using backend.Security.Domain.Services;
 using Microsoft.Extensions.Options;
 
 namespace backend.Security.Authorization.Middleware;
 
-public class JwtMiddleware
+public class JwtMiddlewareClient
 {
     private readonly RequestDelegate _next;
     private readonly AppSettings _appSettings;
 
-    public JwtMiddleware(RequestDelegate next, IOptions<AppSettings> appSettings)
+    public JwtMiddlewareClient(RequestDelegate next, IOptions<AppSettings> appSettings)
     {
         _next = next;
         _appSettings = appSettings.Value;
     }
-
-    public async Task Invoke(HttpContext context, IUserService userService, IJwtHandler handler)
+    
+    public async Task Invoke(HttpContext context, IUserClientService userClientService, IJwtHandler handler)
     {
         var token = context.Request.Headers["Authorization"]
             .FirstOrDefault()?.Split(" ").Last();
@@ -25,13 +25,12 @@ public class JwtMiddleware
         var userType = claimsToken.Type;
         if (userId != null)
         {
-            // Attach user to context on successful JWT validation
-            if (userType != null && userType == "BUSINESS")
+            if (userType != null && userType == "CLIENT")
             {
-                context.Items["User"] = await userService.GetByIdAsync(userId);    
+                context.Items["UserClient"] = await userClientService.GetByIdAsync(userId);    
             }
+            
         }
-
         await _next(context);
     }
 }

@@ -18,20 +18,21 @@ public class JwtHandler : IJwtHandler
         _appSettings = appSettings.Value;
     }
 
-    public string GenerateToken(Business user)
+    public string GenerateToken(long id, string email, string type)
     {
         // Generate Token for a valid period of 7 days
         
         Console.WriteLine($"Secret: {_appSettings.Secret}");
         var secret = _appSettings.Secret;
         var key = Encoding.ASCII.GetBytes(secret);
-        Console.WriteLine($"User Id: {user.Id.ToString()}");
+        Console.WriteLine($"User Id: {id.ToString()}");
         var tokenDescriptor = new SecurityTokenDescriptor
         {
             Subject = new ClaimsIdentity(new[]
             {
-                new Claim(ClaimTypes.Sid, user.Id.ToString()),
-                new Claim(ClaimTypes.Name, user.Email)
+                new Claim(ClaimTypes.Sid, id.ToString()),
+                new Claim(ClaimTypes.Name, email),
+                new Claim(ClaimTypes.Role, type)
             }),
             Expires = DateTime.UtcNow.AddDays(7),
             SigningCredentials = new SigningCredentials(
@@ -45,8 +46,9 @@ public class JwtHandler : IJwtHandler
 
     }
 
-    public int? ValidateToken(string token)
+    public ClaimsToken? ValidateToken(string token)
     {
+        var claimsToken = new ClaimsToken();
         if (string.IsNullOrEmpty(token))
             return null;
 
@@ -68,7 +70,11 @@ public class JwtHandler : IJwtHandler
             var jwtToken = (JwtSecurityToken)validatedToken;
             var userId = int.Parse(jwtToken.Claims.First(
                 claim => claim.Type == ClaimTypes.Sid).Value);
-            return userId;
+            var userType = jwtToken.Claims.First(
+                claim => claim.Type == ClaimTypes.Role).Value;
+            claimsToken.Id = userId;
+            claimsToken.Type = userType;
+            return claimsToken;
         }
         catch (Exception e)
         {

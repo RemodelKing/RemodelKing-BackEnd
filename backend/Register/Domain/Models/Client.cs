@@ -13,8 +13,8 @@ public class Client
     public string Password { get; set; }
     public string ConfirmPassword { get; set; }
     
-    //[JsonIgnore] 
-    //public string PasswordHash { get; set; }
+    [JsonIgnore] 
+    public string PasswordHash { get; set; }
 
     public string Phone { get; set; }
     public string Address { get; set; }

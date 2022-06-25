@@ -9,32 +9,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="502bcef3-8177-4903-888e-0d0f82f19310" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/backend/Security/Authorization/Middleware/JwtMiddlewareClient.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Security/Controllers/UsersClientController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Security/Domain/Models/ClaimsToken.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Security/Domain/Models/UserClient.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Security/Domain/Repositories/IUserClientRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Security/Domain/Services/Communication/AuthenticateClientRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Security/Domain/Services/Communication/AuthenticateClientResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Security/Domain/Services/Communication/RegisterClientRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Security/Domain/Services/Communication/RegisterClientResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Security/Domain/Services/Communication/UpdateClientRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Security/Domain/Services/IUserClientService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Security/Persistence/Repositories/UserClientRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Security/Resources/UserClientResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Security/Services/UserClientService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.backend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/Register/Domain/Models/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Domain/Models/Client.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Register/Domain/Repositories/IClientRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Domain/Repositories/IClientRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Register/Domain/Services/IClientService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Domain/Services/IClientService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Register/Resources/ClientResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Resources/ClientResource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Register/Resources/SaveClientResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Resources/SaveClientResource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Register/Services/ClientServiceImpl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Services/ClientServiceImpl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Shared/Persistence/Contexts/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Shared/Persistence/Contexts/AppDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/bin/Debug/net6.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/bin/Debug/net6.0/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Security/Authorization/Attributes/AuthorizeAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Security/Authorization/Attributes/AuthorizeAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Security/Authorization/Handlers/Implementations/JwtHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Security/Authorization/Handlers/Implementations/JwtHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Security/Authorization/Handlers/Interfaces/IJwtHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Security/Authorization/Handlers/Interfaces/IJwtHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Security/Authorization/Middleware/JwtMiddleware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Security/Authorization/Middleware/JwtMiddleware.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Security/Mapping/ModelToResourceProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Security/Mapping/ModelToResourceProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Security/Mapping/ResourceToModelProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Security/Mapping/ResourceToModelProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Security/Services/UserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Security/Services/UserService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.exe" beforeDir="false" afterPath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/ref/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/ref/backend.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/refint/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/refint/backend.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/backend.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/backend.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/backend.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/backend.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/staticwebassets.pack.sentinel" afterDir="false" />
     </list>
@@ -50,6 +55,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/14e8d8f5e08f22b1d8552e71c61d2a59ca14fa4bba4c12a6b94e86fc846e8fd/JwtSecurityTokenHandler.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -138,6 +146,8 @@
       <workItem from="1656024608797" duration="766000" />
       <workItem from="1656128235600" duration="705000" />
       <workItem from="1656129054630" duration="3913000" />
+      <workItem from="1656167242921" duration="7345000" />
+      <workItem from="1656175287256" duration="3145000" />
     </task>
     <servers />
   </component>
