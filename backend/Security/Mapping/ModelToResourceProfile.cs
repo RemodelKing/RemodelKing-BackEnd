@@ -14,7 +14,12 @@ public class ModelToResourceProfile : Profile
     {
         CreateMap<Business, AuthenticateResponse>();
         CreateMap<Business, RegisterResponse>();
-        CreateMap<Business, UserResourceX>();
+        CreateMap<Business, BusinessProfileResource>();
         CreateMap<Business, RegisterRequest>();
+
+        CreateMap<Client, AuthenticateResponse>();
+        CreateMap<Client, RegisterClientResponse>();
+        CreateMap<Client, ClientProfileResource>();
+        CreateMap<Client, RegisterClientRequest>();
     }
 }

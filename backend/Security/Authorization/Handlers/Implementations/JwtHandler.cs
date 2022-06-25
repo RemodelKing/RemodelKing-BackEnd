@@ -76,4 +76,28 @@ public class JwtHandler : IJwtHandler
             return null;
         }
     }
+
+    public string GenerateTokenClient(Client user)
+    {
+        Console.WriteLine($"Secret: {_appSettings.Secret}");
+        var secret = _appSettings.Secret;
+        var key = Encoding.ASCII.GetBytes(secret);
+        Console.WriteLine($"User Id: {user.Id.ToString()}");
+        var tokenDescriptor = new SecurityTokenDescriptor
+        {
+            Subject = new ClaimsIdentity(new[]
+            {
+                new Claim(ClaimTypes.Sid, user.Id.ToString()),
+                new Claim(ClaimTypes.Name, user.Email)
+            }),
+            Expires = DateTime.UtcNow.AddDays(7),
+            SigningCredentials = new SigningCredentials(
+                new SymmetricSecurityKey(key),
+                SecurityAlgorithms.HmacSha512Signature)
+        };
+        var tokenHandler = new JwtSecurityTokenHandler();
+        Console.WriteLine($"Token Expiration: {tokenDescriptor.Expires.ToString()}");
+        var token = tokenHandler.CreateToken(tokenDescriptor);
+        return tokenHandler.WriteToken(token);
+    }
 }

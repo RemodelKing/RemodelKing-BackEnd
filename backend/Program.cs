@@ -115,8 +115,10 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWorkRepository>();
 
 // Security Injection Configuration
 builder.Services.AddScoped<IJwtHandler, JwtHandler>();
-builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IBusinessProfileRepository, BusinessProfileRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
+
+builder.Services.AddScoped<IClientProfileRepository, ClientProfileRepository>();
 // AutoMapper Configuration
 builder.Services.AddAutoMapper(
     typeof(backend.Register.Mapping.ModelToResourceProfile),

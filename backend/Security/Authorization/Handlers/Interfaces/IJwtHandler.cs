@@ -7,4 +7,5 @@ public interface IJwtHandler
 {
     string GenerateToken(Business user);
     int? ValidateToken(string token);
+    string GenerateTokenClient(Client user);
 }

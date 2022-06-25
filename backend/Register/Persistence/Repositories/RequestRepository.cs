@@ -14,12 +14,14 @@ public class RequestRepository : BaseRepository, IRequestRepository
 
     public async Task<IEnumerable<Request>> ListAsync()
     {
-        return await _context.Requests.ToListAsync();
+        return await _context.Requests.Include(p=>p.Client).ToListAsync();
     }
 
     public async Task<Request> FindByIdAsync(long id)
     {
-        return await _context.Requests.FindAsync(id);
+        return await _context.Requests
+            .Include(p => p.Client)
+            .FirstOrDefaultAsync(p => p.Id == id);
     }
 
     public async Task AddAsync(Request request)

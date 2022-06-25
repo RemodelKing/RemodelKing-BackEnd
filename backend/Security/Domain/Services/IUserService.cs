@@ -13,4 +13,12 @@ public interface IUserService
     Task<RegisterResponse> RegisterAsync(RegisterRequest request);
     Task UpdateAsync(long id, UpdateRequest request);
     Task DeleteAsync(long id);
+    
+    
+    Task<AuthenticateResponse> AuthenticateClient(AuthenticateRequest request);
+    Task<IEnumerable<Client>> ListAsyncClient();
+    Task<Client> GetByIdAsyncClient(long id);
+    Task<RegisterClientResponse> RegisterAsyncClient(RegisterClientRequest request);
+    Task UpdateAsyncClient(long id, UpdateRequest request);
+    Task DeleteAsyncClient(long id);
 }
