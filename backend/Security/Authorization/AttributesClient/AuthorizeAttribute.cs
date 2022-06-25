@@ -1,12 +1,11 @@
-using backend.Register.Domain.Models;
-using backend.Security.Domain.Models;
+﻿using backend.Register.Domain.Models;
+using backend.Security.Authorization.Attributes;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace backend.Security.Authorization.Attributes;
-
+namespace backend.Security.Authorization.AttributesClient;
 [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
-public class AuthorizeAttribute : Attribute, IAuthorizationFilter
+public class AuthorizeAttribute: Attribute, IAuthorizationFilter
 {
     public void OnAuthorization(AuthorizationFilterContext context)
     {
@@ -24,7 +23,7 @@ public class AuthorizeAttribute : Attribute, IAuthorizationFilter
         // Authorization process
         var user = context.HttpContext.Items["User"];
         if (user == null)
-            context.Result = new JsonResult(new { message = "Unauthorized 1" })
+            context.Result = new JsonResult(new { message = "Unauthorized 2" })
                 { StatusCode = StatusCodes.Status401Unauthorized };
     }
 }

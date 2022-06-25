@@ -71,8 +71,6 @@ public class ClientServiceImpl: IClientService
         existingClient.LastName = client.LastName;
         existingClient.Id = client.Id;
         existingClient.Email = client.Email;
-        existingClient.Password = client.Password;
-        existingClient.ConfirmPassword = client.ConfirmPassword;
         existingClient.Phone = client.Phone;
         existingClient.Address = client.Address;
         existingClient.Img = client.Img;

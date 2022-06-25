@@ -53,8 +53,6 @@ public class AppDbContext: DbContext
             builder.Entity<Client>().Property(p => p.Name).IsRequired().HasMaxLength(50);
             builder.Entity<Client>().Property(p => p.LastName).IsRequired().HasMaxLength(50);
             builder.Entity<Client>().Property(p => p.Email).IsRequired();
-            builder.Entity<Client>().Property(p => p.Password).IsRequired().HasMaxLength(80);
-            builder.Entity<Client>().Property(p => p.ConfirmPassword).IsRequired();
             builder.Entity<Client>().Property(p => p.Phone).IsRequired();
             builder.Entity<Client>().Property(p => p.Address).IsRequired();
             builder.Entity<Client>().Property(p => p.Img).IsRequired();
