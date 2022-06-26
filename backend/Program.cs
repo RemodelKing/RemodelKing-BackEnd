@@ -22,6 +22,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddCors();
 var  MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 // Add services to the container.
 
@@ -82,16 +83,6 @@ builder.Services.AddDbContext<AppDbContext>(
         .EnableSensitiveDataLogging()
         .EnableDetailedErrors());
 
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy(name: MyAllowSpecificOrigins,
-        policy  =>
-        {
-            policy.WithOrigins("http://localhost:3000").AllowAnyHeader()
-                .AllowAnyMethod();
-        });
-});
-
 // Add lower case routes
 builder.Services.AddRouting(
     options => options.LowercaseUrls = true);
@@ -145,6 +136,10 @@ if (app.Environment.IsDevelopment())
 }
 app.UseMiddleware<JwtMiddleware>();
 app.UseHttpsRedirection();
+app.UseCors(x => x
+    .AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader());
 app.UseStaticFiles();
 app.UseRouting();
 app.UseCors(MyAllowSpecificOrigins);
