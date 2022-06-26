@@ -82,7 +82,15 @@ builder.Services.AddDbContext<AppDbContext>(
         .LogTo(Console.WriteLine, LogLevel.Information)
         .EnableSensitiveDataLogging()
         .EnableDetailedErrors());
-
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+        policy  =>
+        {
+            policy.WithOrigins("https://remodelking.azurewebsites.net").AllowAnyHeader()
+                .AllowAnyMethod();
+        });
+});
 // Add lower case routes
 builder.Services.AddRouting(
     options => options.LowercaseUrls = true);
