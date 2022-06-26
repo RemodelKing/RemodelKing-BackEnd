@@ -14,9 +14,10 @@ public class Client
     [JsonIgnore] 
     public string PasswordHash { get; set; }
 
-    public string Phone { get; set; }
+    public long Phone { get; set; }
     public string Address { get; set; } = String.Empty;
     public string Img { get; set; } = String.Empty;
+    public string Description { get; set; } = String.Empty;
 
     public IList<Request> Requests { get; set; } = new List<Request>();
 

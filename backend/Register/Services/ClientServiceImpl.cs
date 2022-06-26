@@ -69,11 +69,11 @@ public class ClientServiceImpl: IClientService
             return new ClientResponse("Client already exists");
         existingClient.Name = client.Name;
         existingClient.LastName = client.LastName;
-        existingClient.Id = client.Id;
         existingClient.Email = client.Email;
         existingClient.Phone = client.Phone;
         existingClient.Address = client.Address;
         existingClient.Img = client.Img;
+        existingClient.Description = client.Description;
         try
         {
             _clientRepository.Update(existingClient);

@@ -3,6 +3,7 @@ using AutoMapper;
 using backend.Register.Domain.Models;
 using backend.Register.Domain.Services;
 using backend.Register.Resources;
+using backend.Security.Domain.Services;
 using backend.Shared.Extensions;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,11 +15,13 @@ public class ClientsController: ControllerBase
 {
     private readonly IClientService _clientService;
     private readonly IMapper _mapper;
+    private readonly IUserService _userService;
 
-    public ClientsController(IClientService clientService, IMapper mapper)
+    public ClientsController(IClientService clientService, IMapper mapper, IUserService userService)
     {
         _clientService = clientService;
         _mapper = mapper;
+        _userService = userService;
     }
 
     [HttpGet]

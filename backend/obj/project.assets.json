@@ -6499,11 +6499,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Luis\\Desktop\\parte de Oscar\\backend\\backend.csproj",
+      "projectUniqueName": "C:\\Users\\Luis\\Desktop\\chicho\\backend\\backend.csproj",
       "projectName": "backend",
-      "projectPath": "C:\\Users\\Luis\\Desktop\\parte de Oscar\\backend\\backend.csproj",
+      "projectPath": "C:\\Users\\Luis\\Desktop\\chicho\\backend\\backend.csproj",
       "packagesPath": "C:\\Users\\Luis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Luis\\Desktop\\parte de Oscar\\backend\\obj\\",
+      "outputPath": "C:\\Users\\Luis\\Desktop\\chicho\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Luis\\AppData\\Roaming\\NuGet\\NuGet.Config"

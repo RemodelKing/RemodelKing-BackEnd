@@ -1,5 +1,7 @@
+using backend.Register.Domain.Services;
 using backend.Security.Authorization.Handlers.Interfaces;
 using backend.Security.Authorization.Settings;
+using backend.Security.Domain.Repositories;
 using backend.Security.Domain.Services;
 using Microsoft.Extensions.Options;
 
@@ -24,7 +26,8 @@ public class JwtMiddleware
         if (userId != null)
         {
             // Attach user to context on successful JWT validation
-            context.Items["User"] = await userService.GetByIdAsync(userId.Value);
+            
+                context.Items["User"] = await userService.GetByIdAsync(userId.Value);
         }
 
         await _next(context);

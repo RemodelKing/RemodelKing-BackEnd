@@ -61,7 +61,8 @@ public class UserService : IUserService
     public async Task<Business> GetByIdAsync(long id)
     {
         var user = await _userRepository.FindByIdAsync(id);
-        if (user == null) throw new KeyNotFoundException("User not found");
+        if (user == null)
+            throw new KeyNotFoundException("User not found");
         return user;
     }
 
@@ -258,4 +259,7 @@ public class UserService : IUserService
         if (user == null) throw new KeyNotFoundException("User not found");
         return user;
     }
+    
+    
+    
 }

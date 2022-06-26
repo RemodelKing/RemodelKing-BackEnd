@@ -21,4 +21,5 @@ public interface IUserService
     Task<RegisterClientResponse> RegisterAsyncClient(RegisterClientRequest request);
     Task UpdateAsyncClient(long id, UpdateRequest request);
     Task DeleteAsyncClient(long id);
+    
 }

@@ -12,7 +12,7 @@ public class SaveClientResource: SaveUserResource
     [MaxLength(50)]
     public string LastName { get; set; }
     [Required]
-    public string Phone { get; set; }
+    public long Phone { get; set; }
     [Required]
     public string Address { get; set; }
     [Required]
@@ -20,5 +20,7 @@ public class SaveClientResource: SaveUserResource
 
     [Required]
     public string Email { get; set; }
+    [Required]
+    public string Description { get; set; }
 
 }

@@ -56,6 +56,7 @@ public class AppDbContext: DbContext
             builder.Entity<Client>().Property(p => p.Phone).IsRequired();
             builder.Entity<Client>().Property(p => p.Address).IsRequired();
             builder.Entity<Client>().Property(p => p.Img).IsRequired();
+            builder.Entity<Client>().Property(p => p.Description).IsRequired();
     
             builder.Entity<Client>()
                 .HasMany(p => p.Requests)
