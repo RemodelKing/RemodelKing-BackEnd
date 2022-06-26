@@ -1,7 +1,7 @@
-﻿using backend.Register.Domain.Repositories;
-using backend.Register.Persistence.Context;
+﻿using backend.Shared.Domain.Repositories;
+using backend.Shared.Persistence.Contexts;
 
-namespace backend.Register.Persistence.Repositories;
+namespace backend.Shared.Persistence.Repositories;
 
 public class UnitOfWorkRepository: IUnitOfWork
 {

@@ -5,6 +5,8 @@ namespace backend.Register.Domain.Repositories;
 public interface IActivityRepository
 {
     Task<IEnumerable<Activity>> ListAsync();
-    Task<Activity> FindByIdAsync(int id);
+    Task<Activity> FindByIdAsync(long id);
     Task AddAsync(Activity activity);
+    void UpdateAsync(Activity activity);
+    void DeleteAsync(Activity activity);
 }

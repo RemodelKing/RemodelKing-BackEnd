@@ -9,52 +9,656 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="502bcef3-8177-4903-888e-0d0f82f19310" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/Register/Controllers/RequestController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Register/Domain/Models/Request.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Register/Domain/Repositories/IRequestRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Register/Domain/Services/Communication/RequestResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Register/Domain/Services/IRequestService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Register/Persistence/Repositories/RequestRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Register/Resources/RequestResource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Register/Resources/SaveRequestResource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Register/Services/RequestServiceImpl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.backend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Register/Domain/Models/Business.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Domain/Models/Business.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Register/Domain/Models/BusinessProject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Domain/Models/BusinessProject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Register/Domain/Models/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Domain/Models/Client.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Register/Mapping/ModelToResourceProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Mapping/ModelToResourceProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Register/Mapping/ResourceToModelProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Mapping/ResourceToModelProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Register/Persistence/Context/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Register/Persistence/Context/AppDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/bin/Debug/net6.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/bin/Debug/net6.0/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/backend/bin/Debug/net6.0/backend.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.genruntimeconfig.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/backend.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/ref/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/ref/backend.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/net6.0/refint/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/Debug/net6.0/refint/backend.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/backend.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/backend.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/backend.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/backend.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/backend/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/app open source/claropechicho/.jpb/persistence-units.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/app open source/claropechicho/src/main/java/com/example/claropechicho/learning/api/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/app open source/claropechicho/src/main/java/com/example/claropechicho/learning/api/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/app open source/claropechicho/src/main/java/com/example/claropechicho/learning/domain/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/app open source/claropechicho/src/main/java/com/example/claropechicho/learning/domain/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/app open source/claropechicho/src/main/java/com/example/claropechicho/learning/domain/persistence/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/app open source/claropechicho/src/main/java/com/example/claropechicho/learning/domain/persistence/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/app open source/claropechicho/src/main/java/com/example/claropechicho/learning/domain/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/app open source/claropechicho/src/main/java/com/example/claropechicho/learning/domain/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/app open source/claropechicho/src/main/java/com/example/claropechicho/learning/mapping/CategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/app open source/claropechicho/src/main/java/com/example/claropechicho/learning/mapping/MappingConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/app open source/claropechicho/src/main/java/com/example/claropechicho/learning/mapping/ProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/app open source/claropechicho/src/main/java/com/example/claropechicho/learning/resource/CategoryResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/app open source/claropechicho/src/main/java/com/example/claropechicho/learning/resource/CreateCategoryResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/app open source/claropechicho/src/main/java/com/example/claropechicho/learning/resource/CreateProductResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/app open source/claropechicho/src/main/java/com/example/claropechicho/learning/resource/ProductResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/app open source/claropechicho/src/main/java/com/example/claropechicho/learning/service/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/app open source/claropechicho/src/main/java/com/example/claropechicho/learning/service/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/app open source/claropechicho/src/main/java/com/example/claropechicho/shared/domain/model/AuditModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/app open source/claropechicho/src/main/java/com/example/claropechicho/shared/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/app open source/claropechicho/src/main/java/com/example/claropechicho/shared/exception/ResourceValidationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/app open source/claropechicho/src/main/java/com/example/claropechicho/shared/mapping/EnhancedModelMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/app open source/claropechicho/src/main/java/com/example/claropechicho/shared/mapping/MappingConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/complejidad algoritmica/primeros pasos/.idea/complejidad algoritmica.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/landing page v1/.idea/landing page v1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/.idea/.idea.LearningCenter.API/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/.idea/.idea.LearningCenter.API/.idea/dictionaries/Luis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/.idea/.idea.LearningCenter.API/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/.idea/.idea.LearningCenter.API/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/.idea/.idea.LearningCenter.API/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API.Tests/Drivers/Driver.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API.Tests/Features/Calculator.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API.Tests/Features/TutorialsServiceTests.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API.Tests/Hooks/Hook.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API.Tests/LearningCenter.API.Tests.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API.Tests/Steps/CalculatorStepDefinitions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API.Tests/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API.Tests/obj/Debug/net6.0/LearningCenter.API.Tests.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API.Tests/obj/Debug/net6.0/LearningCenter.API.Tests.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API.Tests/obj/Debug/net6.0/LearningCenter.API.Tests.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API.Tests/obj/Debug/net6.0/LearningCenter.API.Tests.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API.Tests/obj/Debug/net6.0/LearningCenter.API.Tests.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API.Tests/obj/Debug/net6.0/LearningCenter.API.Tests.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API.Tests/obj/Debug/net6.0/xUnit.AssemblyHooks.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API.Tests/obj/LearningCenter.API.Tests.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API.Tests/obj/LearningCenter.API.Tests.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API.Tests/obj/LearningCenter.API.Tests.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API.Tests/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API.Tests/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API.Tests/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API.Tests/obj/rider.project.restore.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Controllers/WeatherForecastController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Learning/Controllers/CategoriesController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Learning/Controllers/CategoryTutorialsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Learning/Controllers/TutorialsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Learning/Domain/Models/Category.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Learning/Domain/Models/Tutorial.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Learning/Domain/Repositories/ICategoryRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Learning/Domain/Repositories/ITutorialRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Learning/Domain/Services/Communication/CategoryResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Learning/Domain/Services/Communication/TutorialResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Learning/Domain/Services/ICategoryService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Learning/Domain/Services/ITutorialService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Learning/Mapping/ModelToResourceProfile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Learning/Mapping/ResourceToModelProfile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Learning/Persistence/Repositories/CategoryRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Learning/Persistence/Repositories/TutorialRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Learning/Resources/CategoryResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Learning/Resources/SaveCategoryResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Learning/Resources/SaveTutorialResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Learning/Resources/TutorialResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Learning/Services/CategoryService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Learning/Services/TutorialService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/LearningCenter.API.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Properties/launchSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Security/Authorization/Attributes/AllowAnonymousAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Security/Authorization/Attributes/AuthorizeAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Security/Authorization/Handlers/Implementations/JwtHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Security/Authorization/Handlers/Interfaces/IJwtHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Security/Authorization/Middleware/ErrorHandlerMiddleware.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Security/Authorization/Middleware/JwtMiddleware.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Security/Authorization/Settings/AppSettings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Security/Controllers/UsersControllers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Security/Domain/Models/User.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Security/Domain/Repositories/IUserRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Security/Domain/Services/Communication/AuthenticateRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Security/Domain/Services/Communication/AuthenticateResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Security/Domain/Services/Communication/RegisterRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Security/Domain/Services/Communication/UpdateRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Security/Domain/Services/IUserService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Security/Exceptions/AppException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Security/Mapping/ModelToResourceProfile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Security/Mapping/ResourceToModelProfile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Security/Persistence/Repositories/UserRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Security/Resources/UserResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Security/Services/UserService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Shared/Domain/Repositories/IUnitOfWork.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Shared/Domain/Services/Communication/BaseResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Shared/Extensions/ModelBuilderExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Shared/Extensions/ModelStateExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Shared/Extensions/StringExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Shared/Persistence/Contexts/AppDbContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Shared/Persistence/Repositories/BaseRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/Shared/Persistence/Repositories/UnitOfWork.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/WeatherForecast.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/appsettings.Development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/AutoMapper.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/BouncyCastle.Crypto.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/Google.Protobuf.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/K4os.Compression.LZ4.Streams.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/K4os.Compression.LZ4.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/K4os.Hash.xxHash.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/LearningCenter.API.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/LearningCenter.API.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/LearningCenter.API.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/LearningCenter.API.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/LearningCenter.API.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.Design.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/Microsoft.OpenApi.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/MySql.Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/MySql.EntityFrameworkCore.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/System.Drawing.Common.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/System.Security.Permissions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/System.Windows.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/Ubiety.Dns.Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/ZstdNet.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/appsettings.Development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/Debug/net6.0/LearningCenter.API.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/Debug/net6.0/LearningCenter.API.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/Debug/net6.0/LearningCenter.API.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/Debug/net6.0/LearningCenter.API.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/Debug/net6.0/LearningCenter.API.MvcApplicationPartsAssemblyInfo.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/Debug/net6.0/LearningCenter.API.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/Debug/net6.0/LearningCenter.API.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/Debug/net6.0/LearningCenter.API.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/Debug/net6.0/LearningCenter.API.csproj.CopyComplete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/Debug/net6.0/LearningCenter.API.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/Debug/net6.0/LearningCenter.API.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/Debug/net6.0/LearningCenter.API.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/Debug/net6.0/LearningCenter.API.genruntimeconfig.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/Debug/net6.0/LearningCenter.API.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/Debug/net6.0/apphost.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/Debug/net6.0/ref/LearningCenter.API.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/Debug/net6.0/refint/LearningCenter.API.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/Debug/net6.0/staticwebassets.build.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/LearningCenter.API.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/LearningCenter.API.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/LearningCenter.API.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/rider.project.restore.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/LearningCenter.API/LearningCenter.API/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/.idea/.idea.backend/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/.idea/.idea.backend/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/.idea/.idea.backend/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/.idea/.idea.backend/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/.idea/.idea.backend/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/Controllers/WeatherForecastController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/Properties/launchSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Controllers/BusinessesController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Controllers/ClientsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Controllers/PaymentsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Domain/Models/Business.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Domain/Models/Client.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Domain/Models/Login.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Domain/Models/Payment.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Domain/Models/User.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Domain/Repositories/IBusinessRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Domain/Repositories/IClientRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Domain/Repositories/IPaymentRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Domain/Repositories/IUnitOfWork.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Domain/Services/Communication/BusinessResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Domain/Services/Communication/ClientResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Domain/Services/Communication/PaymentResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Domain/Services/IBusinessService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Domain/Services/IClientService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Domain/Services/IPaymentService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Mapping/ModelToResourceProfile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Mapping/ResourceToModelProfile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Persistence/Context/AppDbContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Persistence/Repositories/BaseRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Persistence/Repositories/BusinessRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Persistence/Repositories/ClientRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Persistence/Repositories/PaymentRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Persistence/Repositories/UnitOfWorkRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Resources/BusinessResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Resources/ClientResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Resources/PaymentResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Resources/SaveBusinessResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Resources/SaveClientResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Resources/SavePaymentResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Resources/SaveUserResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Resources/UserResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Services/BusinessServiceImpl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Services/ClientServiceImpl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/RemodelKing/Services/PaymentServiceImpl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/Shared/Domain/Services/Communication/BaseResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/Shared/Extensions/ModelBuilderExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/Shared/Extensions/ModelStateExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/Shared/Extensions/StringExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/WeatherForecast.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/appsettings.Development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/backend.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/obj/Debug/net6.0/backend.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/obj/Debug/net6.0/backend.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/obj/Debug/net6.0/backend.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/obj/Debug/net6.0/backend.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/obj/Debug/net6.0/backend.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/obj/Debug/net6.0/backend.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/obj/backend.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/obj/backend.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/obj/backend.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/backend/backend/obj/rider.project.restore.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/.idea/.idea.claropechicho/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/.idea/.idea.claropechicho/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/.idea/.idea.claropechicho/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/.idea/.idea.claropechicho/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Controllers/WeatherForecastController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Learning/Controllers/CategoriesController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Learning/Domain/Models/Category.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Learning/Domain/Models/Product.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Learning/Domain/Repositories/ICategoryRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Learning/Domain/Repositories/IProductRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Learning/Domain/Repositories/IUnitOfWork.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Learning/Domain/Services/Communication/CategoryResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Learning/Domain/Services/Communication/ProductResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Learning/Domain/Services/ICategoryService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Learning/Domain/Services/IProductService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Learning/Mapping/ModelToResourceProfile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Learning/Mapping/ResourceToModelProfile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Learning/Persistence/Contexts/AppDbContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Learning/Persistence/Repositories/BaseRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Learning/Persistence/Repositories/CategoryRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Learning/Persistence/Repositories/ProductRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Learning/Persistence/Repositories/UnitOfWorkRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Learning/Resources/CategoryResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Learning/Resources/ProductResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Learning/Resources/SaveCategoryResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Learning/Resources/SaveProductResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Learning/Services/CategoryService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Learning/Services/ProductService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Properties/launchSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Shared/Domain/Services/Communication/BaseResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Shared/Extensions/ModelBuilderExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Shared/Extensions/ModelStateExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/Shared/Extensions/StringExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/WeatherForecast.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/appsettings.Development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/claropechicho.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/obj/Debug/net6.0/claropechicho.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/obj/Debug/net6.0/claropechicho.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/obj/Debug/net6.0/claropechicho.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/obj/Debug/net6.0/claropechicho.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/obj/Debug/net6.0/claropechicho.MvcApplicationPartsAssemblyInfo.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/obj/Debug/net6.0/claropechicho.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/obj/Debug/net6.0/claropechicho.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/obj/Debug/net6.0/claropechicho.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/obj/Debug/net6.0/claropechicho.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/obj/Debug/net6.0/claropechicho.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/obj/claropechicho.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/obj/claropechicho.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/obj/claropechicho.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CICLO V/web/claropechicho/claropechicho/obj/rider.project.restore.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navegador Opera GX.lnk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemodelKing-BackEnd-develop (1).zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemodelKing-FrontEnd-develop/.idea/RemodelKing-FrontEnd-develop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemodelKing-FrontEnd-develop/.idea/hellowvitevue.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Taller-GPC/a.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Taller-GPC/test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VSCode/Landing/.idea/Landing.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VSCode/Pagina Web/.idea/Pagina Web.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/server/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/server/routes.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/Authentication/Services/Authentication.services.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/Business/pages/BusinessProfile.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/Business/pages/BusinessProfileEdited.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/Business/pages/ProjectProfile.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/Business/pages/businessPage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/Business/pages/comments.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/Business/services/business.services.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/Business/services/comments.service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-100.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-100.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-100.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-100.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-100.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-100italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-100italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-100italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-100italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-100italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-200.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-200.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-200.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-200.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-200.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-200italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-200italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-200italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-200italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-200italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-300.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-300.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-300.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-300.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-300.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-300italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-300italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-300italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-300italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-300italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-500.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-500.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-500.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-500.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-500.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-500italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-500italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-500italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-500italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-500italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-600.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-600.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-600.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-600.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-600.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-600italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-600italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-600italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-600italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-600italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-700.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-700.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-700.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-700.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-700.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-700italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-700italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-700italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-700italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-700italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-800.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-800.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-800.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-800.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-800.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-800italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-800italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-800italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-800italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-800italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-900italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-900italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-900italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-900italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-900italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/fonts/poppins-v20-latin-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/assets/principal.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/components/AddProject.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/components/Estadistic.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/components/Languages.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/components/PasswordChange.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/components/RequestAdded.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/components/Succesfull.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/components/Successful.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/components/dialogLogin.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/components/footerComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/core/services/http.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/i18n.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/local/en.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/local/es.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/plugins/vuetify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/plugins/webfontloader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/styles/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/Business/BusinessRequest.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/Business/PayWithCard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/Business/Payments.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/Business/YourBusiness.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/BusinessInfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/BusinessRequest.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/BussinessView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/ClientLoginView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/ClientRegisterView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/CompanyProgressView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/ForgotPassword.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/ForgotPasswordClientView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/HomeView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/LoginBusiness/CompanyForgotPassword.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/LoginBusiness/CompanyLogin.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/LoginBusiness/CompanyRegister.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/LoginBusiness/PayWithCard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/LoginBusiness/Payments.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/LoginBusiness/services/BusinessLogin.Service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/LoginBusiness/services/PaymentService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/LoginClient/ClientLoginView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/LoginClient/ClientRegisterView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/LoginClient/ForgotPasswordClientView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/Porfolio/pages/client-portfolio.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/Porfolio/pages/client.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/Porfolio/services/client.service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/Porfolio/services/portfolio.service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/Register.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/RequestHistory.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/UserType.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/YourBusiness.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/src/views/projectView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../copia de seguridad 2,0.1/vite.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nueva" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../versiones web/RemodelKing-FrontEnd-develop/.idea/RemodelKing-FrontEnd-develop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../versiones web/RemodelKing-FrontEnd-develop/.idea/hellowvitevue.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/server/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/server/routes.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/Authentication/Services/Authentication.services.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/Business/pages/BusinessProfile.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/Business/pages/BusinessProfileEdited.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/Business/pages/ProjectProfile.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/Business/pages/businessPage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/Business/pages/comments.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/Business/services/business.services.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/Business/services/comments.service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-100.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-100.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-100.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-100.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-100.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-100italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-100italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-100italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-100italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-100italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-200.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-200.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-200.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-200.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-200.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-200italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-200italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-200italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-200italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-200italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-300.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-300.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-300.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-300.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-300.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-300italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-300italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-300italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-300italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-300italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-500.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-500.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-500.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-500.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-500.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-500italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-500italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-500italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-500italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-500italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-600.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-600.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-600.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-600.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-600.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-600italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-600italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-600italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-600italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-600italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-700.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-700.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-700.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-700.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-700.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-700italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-700italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-700italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-700italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-700italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-800.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-800.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-800.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-800.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-800.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-800italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-800italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-800italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-800italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-800italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-900italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-900italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-900italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-900italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-900italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/fonts/poppins-v20-latin-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/assets/principal.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/components/AddProject.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/components/Estadistic.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/components/PasswordChange.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/components/RequestAdded.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/components/Succesfull.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/components/Successful.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/components/dialogLogin.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/components/footerComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/core/services/http.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/i18n.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/local/en.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/local/es.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/plugins/vuetify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/plugins/webfontloader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/styles/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/BusinessInfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/BusinessRequest.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/BussinessView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/ClientLoginView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/ClientRegisterView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/CompanyProgressView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/ForgotPassword.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/ForgotPasswordClientView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/HomeView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/LoginBusiness/CompanyForgotPassword.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/LoginBusiness/CompanyLogin.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/LoginBusiness/CompanyRegister.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/LoginBusiness/PayWithCard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/LoginBusiness/Payments.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/LoginBusiness/services/BusinessLogin.Service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/LoginBusiness/services/PaymentService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/LoginClient/ClientLoginView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/LoginClient/ClientRegisterView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/LoginClient/ForgotPasswordClientView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/Porfolio/pages/client-portfolio.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/Porfolio/pages/client.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/Porfolio/services/client.service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/Porfolio/services/portfolio.service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/Register.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/RequestHistory.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/UserType.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/YourBusiness.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/src/views/projectView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue copia/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2A63nQJ9JpWrp56uFMLyCTGZhFe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -67,6 +671,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -123,6 +731,17 @@
       <workItem from="1654635704515" duration="2166000" />
       <workItem from="1654657074916" duration="613000" />
       <workItem from="1654682643952" duration="1037000" />
+      <workItem from="1655302674249" duration="13569000" />
+      <workItem from="1655728627315" duration="29800000" />
+      <workItem from="1655829471927" duration="3079000" />
+      <workItem from="1655842861862" duration="1678000" />
+      <workItem from="1655866874581" duration="619000" />
+      <workItem from="1655940487339" duration="19704000" />
+      <workItem from="1655996964767" duration="13064000" />
+      <workItem from="1656024608797" duration="766000" />
+      <workItem from="1656128235600" duration="705000" />
+      <workItem from="1656129054630" duration="3913000" />
+      <workItem from="1656182836528" duration="13793000" />
     </task>
     <servers />
   </component>

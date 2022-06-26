@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Miguel Garcia\\Desktop\\TB4_Apps Web\\backend\\backend.csproj": {}
+    "C:\\Users\\Luis\\Desktop\\parte de Oscar\\backend\\backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Miguel Garcia\\Desktop\\TB4_Apps Web\\backend\\backend.csproj": {
+    "C:\\Users\\Luis\\Desktop\\parte de Oscar\\backend\\backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Miguel Garcia\\Desktop\\TB4_Apps Web\\backend\\backend.csproj",
+        "projectUniqueName": "C:\\Users\\Luis\\Desktop\\parte de Oscar\\backend\\backend.csproj",
         "projectName": "backend",
-        "projectPath": "C:\\Users\\Miguel Garcia\\Desktop\\TB4_Apps Web\\backend\\backend.csproj",
-        "packagesPath": "C:\\Users\\Miguel Garcia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Miguel Garcia\\Desktop\\TB4_Apps Web\\backend\\obj\\",
+        "projectPath": "C:\\Users\\Luis\\Desktop\\parte de Oscar\\backend\\backend.csproj",
+        "packagesPath": "C:\\Users\\Luis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luis\\Desktop\\parte de Oscar\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Miguel Garcia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Luis\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -48,6 +46,14 @@
               "target": "Package",
               "version": "[11.0.0, )"
             },
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.3, )"
@@ -67,6 +73,14 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.3.1, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[6.3.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.20.0, )"
             }
           },
           "imports": [
@@ -87,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
